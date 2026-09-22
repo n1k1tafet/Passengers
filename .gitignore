@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+# Данные не версионируются: исходный архив выдаётся организаторами,
+# витрина собирается командой `make data`.
+data/raw/*.csv
+data/raw/*.xlsx
+data/processed/telemetry.parquet
+data/processed/telemetry_flags.parquet
+data/processed/lab.parquet
+data_1.rar

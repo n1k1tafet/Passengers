@@ -1,0 +1,10 @@
+services:
+  dfmas:
+    build: .
+    image: dfmas:1.0.0
+    volumes:
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - ./artifacts:/app/artifacts
+    # Полный конвейер: витрина -> модели -> отчёты -> сценарии -> дашборд
+    command: ["all"]

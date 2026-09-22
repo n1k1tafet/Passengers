@@ -1,0 +1,4108 @@
+{
+ "recommendation": {
+  "t": "2024-04-26T20:00:00",
+  "decision": "act_best_effort",
+  "headline": "Спецификация не гарантирована: выбран режим минимального риска, прогноз серы 8.06 мг/кг (риск 12 % против 16 % при бездействии)",
+  "action_label": "температура реактора +0.9 °C, давление +0.20 МПа",
+  "option": {
+   "option_id": "opt205",
+   "action": {
+    "d_temp_c": 0.884,
+    "d_load_pct": 0.0,
+    "d_press_mpa": 0.2007,
+    "d_h2_pct": 0.0
+   },
+   "action_label": "температура реактора +0.9 °C, давление +0.20 МПа",
+   "metrics": {
+    "quality_margin": 0.58,
+    "worst_exceed_prob": 0.121,
+    "throughput_t_h": 270.441,
+    "cost_rub_h": 1139079.704,
+    "severity_index": 0.245,
+    "feasible": 1,
+    "margin_rub_h": 13735164.31,
+    "violated": [
+     "Массовая концентрация серы: риск 12 %",
+     "Температура выкипания 95 % об.: риск 12 %"
+    ],
+    "compliant": 0
+   },
+   "score": 0.887,
+   "rank": 123,
+   "pareto": true,
+   "rationale": "",
+   "predictions": {
+    "quality": {
+     "t": "2024-04-26T20:00:00",
+     "grade": "DT_SUMMER",
+     "items": [
+      {
+       "param": "Mg.Sulfur",
+       "ru_name": "Массовая концентрация серы",
+       "value": 6.6,
+       "unit": "мг/кг",
+       "source": "ЛИМС (контрольный факт)",
+       "age_h": 4.0,
+       "forecast": 8.056,
+       "lo": 3.667,
+       "hi": 11.762,
+       "limit": 10.0,
+       "limit_kind": "max",
+       "hard": true,
+       "exceed_prob": 0.121,
+       "margin": 1.944,
+       "risk_process": 0.04,
+       "risk_detail": {
+        "p_total": 0.121,
+        "p_process": 0.04,
+        "sigma_total": 1.492,
+        "sigma_measurement": 0.992,
+        "sigma_process": 1.114,
+        "target_for_10pct": 7.705
+       }
+      },
+      {
+       "param": "D15",
+       "ru_name": "Плотность при 15 °C",
+       "value": 835.3,
+       "unit": "kg/m3",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": 835.192,
+       "lo": 832.12,
+       "hi": 838.264,
+       "limit": 845.0,
+       "limit_kind": "range",
+       "hard": true,
+       "exceed_prob": 0.0,
+       "margin": 9.808,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "CetaneNumber",
+       "ru_name": "Цетановое число",
+       "value": 55.8,
+       "unit": "cetane",
+       "source": "ЛИМС (34 ч)",
+       "age_h": 34.0,
+       "forecast": 55.821,
+       "lo": 52.803,
+       "hi": 58.84,
+       "limit": 51.0,
+       "limit_kind": "min",
+       "hard": true,
+       "exceed_prob": 0.004,
+       "margin": 4.821,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "95%.T",
+       "ru_name": "Температура выкипания 95 % об.",
+       "value": 350.0,
+       "unit": "degC",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": 350.215,
+       "lo": 336.647,
+       "hi": 363.783,
+       "limit": 360.0,
+       "limit_kind": "max",
+       "hard": true,
+       "exceed_prob": 0.118,
+       "margin": 9.785,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "CFPP",
+       "ru_name": "Предельная температура фильтруемости (ПТФ)",
+       "value": -4.0,
+       "unit": "degC",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": -3.905,
+       "lo": -6.971,
+       "hi": -0.839,
+       "limit": -5.0,
+       "limit_kind": "max",
+       "hard": false,
+       "exceed_prob": 0.722,
+       "margin": -1.095,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "FlashPoint",
+       "ru_name": "Температура вспышки",
+       "value": 69.0,
+       "unit": "degC",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": 68.871,
+       "lo": 57.896,
+       "hi": 79.846,
+       "limit": 55.0,
+       "limit_kind": "min",
+       "hard": false,
+       "exceed_prob": 0.019,
+       "margin": 13.871,
+       "risk_process": null,
+       "risk_detail": null
+      }
+     ],
+     "confidence": 0.943,
+     "horizon_min": 120,
+     "worst_param": "Mg.Sulfur",
+     "worst_prob": 0.121,
+     "notes": []
+    },
+    "economics": {
+     "cost_rub_h": 1139079.7041246847,
+     "fuel_rub_h": -13909.267950613536,
+     "h2_rub_h": 1150416.522345601,
+     "recycle_rub_h": 98.719017329179,
+     "catalyst_rub_h": 2473.7307123679984,
+     "throughput_t_h": 270.44080025809154,
+     "gross_revenue_rub_h": 14874244.014195034,
+     "margin_rub_h": 13735164.310070349,
+     "catalyst_days_left": 707.4335097391415
+    },
+    "reliability": {
+     "t": "2024-04-26T20:00:00",
+     "severity_index": 0.245,
+     "severity": "ok",
+     "factors": {
+      "wabt": 0.0,
+      "dp_reactor": 0.567,
+      "quench": 0.295,
+      "h2_to_oil": 0.295
+     },
+     "bounds": {
+      "d_temp_c": [
+       -4.985,
+       21.45
+      ]
+     },
+     "catalyst_days_left": 707.0,
+     "notes": []
+    }
+   }
+  },
+  "alternatives": [
+   {
+    "option_id": "opt038",
+    "action": {
+     "d_temp_c": -2.651,
+     "d_load_pct": 3.013,
+     "d_press_mpa": -0.2007,
+     "d_h2_pct": 0.0
+    },
+    "action_label": "температура реактора -2.7 °C, загрузка +3.0 %, давление -0.20 МПа",
+    "metrics": {
+     "quality_margin": 0.479,
+     "worst_exceed_prob": 0.485,
+     "throughput_t_h": 278.589,
+     "cost_rub_h": 1161901.748,
+     "severity_index": 0.245,
+     "feasible": 1,
+     "margin_rub_h": 14160488.364,
+     "violated": [
+      "Массовая концентрация серы: риск 49 %"
+     ],
+     "compliant": 0
+    },
+    "score": 1.0,
+    "rank": 106,
+    "pareto": true,
+    "rationale": "",
+    "predictions": {
+     "quality": {
+      "t": "2024-04-26T20:00:00",
+      "grade": "DT_SUMMER",
+      "items": [
+       {
+        "param": "Mg.Sulfur",
+        "ru_name": "Массовая концентрация серы",
+        "value": 6.6,
+        "unit": "мг/кг",
+        "source": "ЛИМС (контрольный факт)",
+        "age_h": 4.0,
+        "forecast": 9.904,
+        "lo": 4.25,
+        "hi": 14.679,
+        "limit": 10.0,
+        "limit_kind": "max",
+        "hard": true,
+        "exceed_prob": 0.485,
+        "margin": 0.096,
+        "risk_process": 0.466,
+        "risk_detail": {
+         "p_total": 0.485,
+         "p_process": 0.466,
+         "sigma_total": 1.492,
+         "sigma_measurement": 0.992,
+         "sigma_process": 1.114,
+         "target_for_10pct": 7.705
+        }
+       },
+       {
+        "param": "D15",
+        "ru_name": "Плотность при 15 °C",
+        "value": 835.3,
+        "unit": "kg/m3",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": 835.622,
+        "lo": 832.55,
+        "hi": 838.694,
+        "limit": 845.0,
+        "limit_kind": "range",
+        "hard": true,
+        "exceed_prob": 0.0,
+        "margin": 9.378,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "CetaneNumber",
+        "ru_name": "Цетановое число",
+        "value": 55.8,
+        "unit": "cetane",
+        "source": "ЛИМС (34 ч)",
+        "age_h": 34.0,
+        "forecast": 55.736,
+        "lo": 52.717,
+        "hi": 58.754,
+        "limit": 51.0,
+        "limit_kind": "min",
+        "hard": true,
+        "exceed_prob": 0.005,
+        "margin": 4.736,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "95%.T",
+        "ru_name": "Температура выкипания 95 % об.",
+        "value": 350.0,
+        "unit": "degC",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": 349.355,
+        "lo": 335.787,
+        "hi": 362.923,
+        "limit": 360.0,
+        "limit_kind": "max",
+        "hard": true,
+        "exceed_prob": 0.098,
+        "margin": 10.645,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "CFPP",
+        "ru_name": "Предельная температура фильтруемости (ПТФ)",
+        "value": -4.0,
+        "unit": "degC",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": -4.285,
+        "lo": -7.351,
+        "hi": -1.219,
+        "limit": -5.0,
+        "limit_kind": "max",
+        "hard": false,
+        "exceed_prob": 0.649,
+        "margin": -0.715,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "FlashPoint",
+        "ru_name": "Температура вспышки",
+        "value": 69.0,
+        "unit": "degC",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": 69.387,
+        "lo": 58.412,
+        "hi": 80.362,
+        "limit": 55.0,
+        "limit_kind": "min",
+        "hard": false,
+        "exceed_prob": 0.016,
+        "margin": 14.387,
+        "risk_process": null,
+        "risk_detail": null
+       }
+      ],
+      "confidence": 0.885,
+      "horizon_min": 120,
+      "worst_param": "Mg.Sulfur",
+      "worst_prob": 0.485,
+      "notes": []
+     },
+     "economics": {
+      "cost_rub_h": 1161901.7476193395,
+      "fuel_rub_h": -25160.350750544596,
+      "h2_rub_h": 1184940.454312463,
+      "recycle_rub_h": 104.75724071897424,
+      "catalyst_rub_h": 2016.8868167020448,
+      "throughput_t_h": 278.5889111290676,
+      "gross_revenue_rub_h": 15322390.112098716,
+      "margin_rub_h": 14160488.364479376,
+      "catalyst_days_left": 867.6738751565393
+     },
+     "reliability": {
+      "t": "2024-04-26T20:00:00",
+      "severity_index": 0.245,
+      "severity": "ok",
+      "factors": {
+       "wabt": 0.0,
+       "dp_reactor": 0.567,
+       "quench": 0.295,
+       "h2_to_oil": 0.295
+      },
+      "bounds": {
+       "d_temp_c": [
+        -4.985,
+        21.45
+       ]
+      },
+      "catalyst_days_left": 868.0,
+      "notes": []
+     }
+    }
+   },
+   {
+    "option_id": "opt039",
+    "action": {
+     "d_temp_c": -2.651,
+     "d_load_pct": 3.013,
+     "d_press_mpa": -0.2007,
+     "d_h2_pct": 2.732
+    },
+    "action_label": "температура реактора -2.7 °C, загрузка +3.0 %, давление -0.20 МПа, расход ВСГ +2.7 %",
+    "metrics": {
+     "quality_margin": 0.555,
+     "worst_exceed_prob": 0.433,
+     "throughput_t_h": 278.589,
+     "cost_rub_h": 1161912.809,
+     "severity_index": 0.245,
+     "feasible": 1,
+     "margin_rub_h": 14160477.303,
+     "violated": [
+      "Массовая концентрация серы: риск 43 %"
+     ],
+     "compliant": 0
+    },
+    "score": 1.056,
+    "rank": 91,
+    "pareto": true,
+    "rationale": "",
+    "predictions": {
+     "quality": {
+      "t": "2024-04-26T20:00:00",
+      "grade": "DT_SUMMER",
+      "items": [
+       {
+        "param": "Mg.Sulfur",
+        "ru_name": "Массовая концентрация серы",
+        "value": 6.6,
+        "unit": "мг/кг",
+        "source": "ЛИМС (контрольный факт)",
+        "age_h": 4.0,
+        "forecast": 9.755,
+        "lo": 4.33,
+        "hi": 14.336,
+        "limit": 10.0,
+        "limit_kind": "max",
+        "hard": true,
+        "exceed_prob": 0.433,
+        "margin": 0.245,
+        "risk_process": 0.413,
+        "risk_detail": {
+         "p_total": 0.433,
+         "p_process": 0.413,
+         "sigma_total": 1.492,
+         "sigma_measurement": 0.992,
+         "sigma_process": 1.114,
+         "target_for_10pct": 7.705
+        }
+       },
+       {
+        "param": "D15",
+        "ru_name": "Плотность при 15 °C",
+        "value": 835.3,
+        "unit": "kg/m3",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": 835.622,
+        "lo": 832.55,
+        "hi": 838.694,
+        "limit": 845.0,
+        "limit_kind": "range",
+        "hard": true,
+        "exceed_prob": 0.0,
+        "margin": 9.378,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "CetaneNumber",
+        "ru_name": "Цетановое число",
+        "value": 55.8,
+        "unit": "cetane",
+        "source": "ЛИМС (34 ч)",
+        "age_h": 34.0,
+        "forecast": 55.736,
+        "lo": 52.717,
+        "hi": 58.754,
+        "limit": 51.0,
+        "limit_kind": "min",
+        "hard": true,
+        "exceed_prob": 0.005,
+        "margin": 4.736,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "95%.T",
+        "ru_name": "Температура выкипания 95 % об.",
+        "value": 350.0,
+        "unit": "degC",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": 349.355,
+        "lo": 335.787,
+        "hi": 362.923,
+        "limit": 360.0,
+        "limit_kind": "max",
+        "hard": true,
+        "exceed_prob": 0.098,
+        "margin": 10.645,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "CFPP",
+        "ru_name": "Предельная температура фильтруемости (ПТФ)",
+        "value": -4.0,
+        "unit": "degC",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": -4.285,
+        "lo": -7.351,
+        "hi": -1.219,
+        "limit": -5.0,
+        "limit_kind": "max",
+        "hard": false,
+        "exceed_prob": 0.649,
+        "margin": -0.715,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "FlashPoint",
+        "ru_name": "Температура вспышки",
+        "value": 69.0,
+        "unit": "degC",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": 69.387,
+        "lo": 58.412,
+        "hi": 80.362,
+        "limit": 55.0,
+        "limit_kind": "min",
+        "hard": false,
+        "exceed_prob": 0.016,
+        "margin": 14.387,
+        "risk_process": null,
+        "risk_detail": null
+       }
+      ],
+      "confidence": 0.894,
+      "horizon_min": 120,
+      "worst_param": "Mg.Sulfur",
+      "worst_prob": 0.433,
+      "notes": []
+     },
+     "economics": {
+      "cost_rub_h": 1161912.8092718904,
+      "fuel_rub_h": -25160.350750544596,
+      "h2_rub_h": 1184951.515965014,
+      "recycle_rub_h": 104.75724071897424,
+      "catalyst_rub_h": 2016.8868167020448,
+      "throughput_t_h": 278.5889111290676,
+      "gross_revenue_rub_h": 15322390.112098716,
+      "margin_rub_h": 14160477.302826826,
+      "catalyst_days_left": 867.6738751565393
+     },
+     "reliability": {
+      "t": "2024-04-26T20:00:00",
+      "severity_index": 0.245,
+      "severity": "ok",
+      "factors": {
+       "wabt": 0.0,
+       "dp_reactor": 0.567,
+       "quench": 0.295,
+       "h2_to_oil": 0.295
+      },
+      "bounds": {
+       "d_temp_c": [
+        -4.985,
+        21.45
+       ]
+      },
+      "catalyst_days_left": 868.0,
+      "notes": []
+     }
+    }
+   },
+   {
+    "option_id": "opt040",
+    "action": {
+     "d_temp_c": -2.651,
+     "d_load_pct": 3.013,
+     "d_press_mpa": 0.0,
+     "d_h2_pct": -2.732
+    },
+    "action_label": "температура реактора -2.7 °C, загрузка +3.0 %, расход ВСГ -2.7 %",
+    "metrics": {
+     "quality_margin": 0.555,
+     "worst_exceed_prob": 0.437,
+     "throughput_t_h": 278.589,
+     "cost_rub_h": 1161911.951,
+     "severity_index": 0.245,
+     "feasible": 1,
+     "margin_rub_h": 14160478.161,
+     "violated": [
+      "Массовая концентрация серы: риск 44 %"
+     ],
+     "compliant": 0
+    },
+    "score": 1.052,
+    "rank": 93,
+    "pareto": true,
+    "rationale": "",
+    "predictions": {
+     "quality": {
+      "t": "2024-04-26T20:00:00",
+      "grade": "DT_SUMMER",
+      "items": [
+       {
+        "param": "Mg.Sulfur",
+        "ru_name": "Массовая концентрация серы",
+        "value": 6.6,
+        "unit": "мг/кг",
+        "source": "ЛИМС (контрольный факт)",
+        "age_h": 4.0,
+        "forecast": 9.767,
+        "lo": 4.325,
+        "hi": 14.362,
+        "limit": 10.0,
+        "limit_kind": "max",
+        "hard": true,
+        "exceed_prob": 0.437,
+        "margin": 0.233,
+        "risk_process": 0.417,
+        "risk_detail": {
+         "p_total": 0.437,
+         "p_process": 0.417,
+         "sigma_total": 1.492,
+         "sigma_measurement": 0.992,
+         "sigma_process": 1.114,
+         "target_for_10pct": 7.705
+        }
+       },
+       {
+        "param": "D15",
+        "ru_name": "Плотность при 15 °C",
+        "value": 835.3,
+        "unit": "kg/m3",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": 835.622,
+        "lo": 832.55,
+        "hi": 838.694,
+        "limit": 845.0,
+        "limit_kind": "range",
+        "hard": true,
+        "exceed_prob": 0.0,
+        "margin": 9.378,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "CetaneNumber",
+        "ru_name": "Цетановое число",
+        "value": 55.8,
+        "unit": "cetane",
+        "source": "ЛИМС (34 ч)",
+        "age_h": 34.0,
+        "forecast": 55.736,
+        "lo": 52.717,
+        "hi": 58.754,
+        "limit": 51.0,
+        "limit_kind": "min",
+        "hard": true,
+        "exceed_prob": 0.005,
+        "margin": 4.736,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "95%.T",
+        "ru_name": "Температура выкипания 95 % об.",
+        "value": 350.0,
+        "unit": "degC",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": 349.355,
+        "lo": 335.787,
+        "hi": 362.923,
+        "limit": 360.0,
+        "limit_kind": "max",
+        "hard": true,
+        "exceed_prob": 0.098,
+        "margin": 10.645,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "CFPP",
+        "ru_name": "Предельная температура фильтруемости (ПТФ)",
+        "value": -4.0,
+        "unit": "degC",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": -4.285,
+        "lo": -7.351,
+        "hi": -1.219,
+        "limit": -5.0,
+        "limit_kind": "max",
+        "hard": false,
+        "exceed_prob": 0.649,
+        "margin": -0.715,
+        "risk_process": null,
+        "risk_detail": null
+       },
+       {
+        "param": "FlashPoint",
+        "ru_name": "Температура вспышки",
+        "value": 69.0,
+        "unit": "degC",
+        "source": "ЛИМС (10 ч)",
+        "age_h": 10.0,
+        "forecast": 69.387,
+        "lo": 58.412,
+        "hi": 80.362,
+        "limit": 55.0,
+        "limit_kind": "min",
+        "hard": false,
+        "exceed_prob": 0.016,
+        "margin": 14.387,
+        "risk_process": null,
+        "risk_detail": null
+       }
+      ],
+      "confidence": 0.894,
+      "horizon_min": 120,
+      "worst_param": "Mg.Sulfur",
+      "worst_prob": 0.437,
+      "notes": []
+     },
+     "economics": {
+      "cost_rub_h": 1161911.9507715888,
+      "fuel_rub_h": -25160.350750544596,
+      "h2_rub_h": 1184950.6574647124,
+      "recycle_rub_h": 104.75724071897424,
+      "catalyst_rub_h": 2016.8868167020448,
+      "throughput_t_h": 278.5889111290676,
+      "gross_revenue_rub_h": 15322390.112098716,
+      "margin_rub_h": 14160478.161327127,
+      "catalyst_days_left": 867.6738751565393
+     },
+     "reliability": {
+      "t": "2024-04-26T20:00:00",
+      "severity_index": 0.245,
+      "severity": "ok",
+      "factors": {
+       "wabt": 0.0,
+       "dp_reactor": 0.567,
+       "quench": 0.295,
+       "h2_to_oil": 0.295
+      },
+      "bounds": {
+       "d_temp_c": [
+        -4.985,
+        21.45
+       ]
+      },
+      "catalyst_days_left": 868.0,
+      "notes": []
+     }
+    }
+   }
+  ],
+  "constraint_table": [
+   {
+    "name": "Массовая концентрация серы (жёсткое)",
+    "forecast": "8.06",
+    "limit": "≤ 10.0",
+    "margin": "1.94",
+    "risk": "12 %",
+    "verdict": "риск выше допустимого"
+   },
+   {
+    "name": "Плотность при 15 °C (жёсткое)",
+    "forecast": "835.19",
+    "limit": "диапазон, верх 845.0",
+    "margin": "9.81",
+    "risk": "0 %",
+    "verdict": "выполнено"
+   },
+   {
+    "name": "Цетановое число (жёсткое)",
+    "forecast": "55.82",
+    "limit": "≥ 51.0",
+    "margin": "4.82",
+    "risk": "0 %",
+    "verdict": "выполнено"
+   },
+   {
+    "name": "Температура выкипания 95 % об. (жёсткое)",
+    "forecast": "350.21",
+    "limit": "≤ 360.0",
+    "margin": "9.79",
+    "risk": "12 %",
+    "verdict": "риск выше допустимого"
+   },
+   {
+    "name": "Предельная температура фильтруемости (ПТФ) (рекоменд.)",
+    "forecast": "-3.91",
+    "limit": "≤ -5.0",
+    "margin": "-1.09",
+    "risk": "72 %",
+    "verdict": "НЕ ВЫПОЛНЕНО"
+   },
+   {
+    "name": "Температура вспышки (рекоменд.)",
+    "forecast": "68.87",
+    "limit": "≥ 55.0",
+    "margin": "13.87",
+    "risk": "2 %",
+    "verdict": "выполнено"
+   }
+  ],
+  "confidence": 0.943,
+  "reasons": [
+   "ни один вариант не обеспечивает риск нарушения ниже 10 %: выбран режим МИНИМАЛЬНОГО РИСКА, остаточный риск по показателю «Массовая концентрация серы» 12 %. Основная причина — разброс между лабораторией и поточным анализатором, а не режим установки",
+   "из 314 допустимых вариантов 21 находятся на фронте Парето; выбран лучший по свёртке с приоритетом качества",
+   "относительно бездействия риск нарушения снижается на 4 п.п. ценой 2 784 ₽/ч переменных затрат",
+   "ресурс цикла катализатора при выбранном режиме — 707 сут"
+  ],
+  "expected_effect": {
+   "сера через горизонт": "8.51 → 8.06 мг/кг (интервал 90 % [3.67; 11.76])",
+   "риск нарушения по сере (лаб.)": "16 % → 12 %",
+   "в том числе технологический риск": "4 % (остальное — расхождение лаборатории и поточного анализатора, σ=0.99 мг/кг)",
+   "выпуск": "270.4 т/ч",
+   "переменные затраты": "1 139 080 ₽/ч",
+   "тяжесть режима": "индекс 0.25 (ok)",
+   "ресурс катализатора": "707 сут",
+   "эффект против бездействия": "риск снижается на 4 п.п.; переменные затраты выше на 2 784 ₽/ч; выпуск +0.0 т/ч",
+   "_markdown": "### Время и состояние\nСрез **2024-04-26 20:00**. Пригодность данных **1.00** — данных достаточно.\nСвежесть источников — LIMS_feed_sulfur: 0.0 ч, LIMS_product_sulfur: 4.0 ч, PAK: 0.2 ч, TELEMETRY: 0.0 ч.\nСырьё гидроочистки: сера **1.600 % масс.** (ЛИМС (свежий), возраст 0 ч), Т95 352.0 °C, расход 112.9 т/ч.\n\n### Проблема / риск\nСера продукта сейчас **6.60 мг/кг** (ЛИМС (контрольный факт)); прогноз через 120 мин **без вмешательства** — **8.51** мг/кг, интервал 90 % [4.84; 11.61].\nВероятность выхода за предел 10 мг/кг при бездействии — **16 %**.\nЧтобы риск опустился до 10 %, уровень серы должен быть не выше **7.71 мг/кг** (предел 10 минус 90-й процентиль разброса измерения).\n\n### Предлагаемое действие\n**температура реактора +0.9 °C, давление +0.20 МПа**\n\n### Ожидаемый эффект\n- сера через горизонт: 8.51 → 8.06 мг/кг (интервал 90 % [3.67; 11.76])\n- риск нарушения по сере (лаб.): 16 % → 12 %\n- в том числе технологический риск: 4 % (остальное — расхождение лаборатории и поточного анализатора, σ=0.99 мг/кг)\n- выпуск: 270.4 т/ч\n- переменные затраты: 1 139 080 ₽/ч\n- тяжесть режима: индекс 0.25 (ok)\n- ресурс катализатора: 707 сут\n- эффект против бездействия: риск снижается на 4 п.п.; переменные затраты выше на 2 784 ₽/ч; выпуск +0.0 т/ч\n\n### Проверка ограничений\n| Показатель | Прогноз | Предел | Запас | Риск | Вердикт |\n|---|---|---|---|---|---|\n| Массовая концентрация серы (жёсткое) | 8.06 | ≤ 10.0 | 1.94 | 12 % | риск выше допустимого |\n| Плотность при 15 °C (жёсткое) | 835.19 | диапазон, верх 845.0 | 9.81 | 0 % | выполнено |\n| Цетановое число (жёсткое) | 55.82 | ≥ 51.0 | 4.82 | 0 % | выполнено |\n| Температура выкипания 95 % об. (жёсткое) | 350.21 | ≤ 360.0 | 9.79 | 12 % | риск выше допустимого |\n| Предельная температура фильтруемости (ПТФ) (рекоменд.) | -3.91 | ≤ -5.0 | -1.09 | 72 % | НЕ ВЫПОЛНЕНО |\n| Температура вспышки (рекоменд.) | 68.87 | ≥ 55.0 | 13.87 | 2 % | выполнено |\n\n### Уверенность\nИтоговая уверенность **0.94** (качество данных 1.00 x модельная уверенность 0.94).\n\n### Почему выбран этот вариант\n- ни один вариант не обеспечивает риск нарушения ниже 10 %: выбран режим МИНИМАЛЬНОГО РИСКА, остаточный риск по показателю «Массовая концентрация серы» 12 %. Основная причина — разброс между лабораторией и поточным анализатором, а не режим установки\n- из 314 допустимых вариантов 21 находятся на фронте Парето; выбран лучший по свёртке с приоритетом качества\n- относительно бездействия риск нарушения снижается на 4 п.п. ценой 2 784 ₽/ч переменных затрат\n- ресурс цикла катализатора при выбранном режиме — 707 сут\n\nДопустимые альтернативы:\n- температура реактора -2.7 °C  загрузка +3.0 %  давление -0.20 МПа — риск по сере 49 %  затраты 1 161 902 ₽/ч  выпуск 278.6 т/ч  тяжесть 0.25\n- температура реактора -2.7 °C  загрузка +3.0 %  давление -0.20 МПа  расход ВСГ +2.7 % — риск по сере 43 %  затраты 1 161 913 ₽/ч  выпуск 278.6 т/ч  тяжесть 0.25\n- температура реактора -2.7 °C  загрузка +3.0 %  расход ВСГ -2.7 % — риск по сере 44 %  затраты 1 161 912 ₽/ч  выпуск 278.6 т/ч  тяжесть 0.25"
+  },
+  "blend": {
+   "grade": "DT_SUMMER",
+   "feasible": true,
+   "components": [
+    {
+     "name": "Р-1 глубокая очистка",
+     "share": 0.0071,
+     "sulfur_mg_kg": 3.0,
+     "t95_c": 344.0,
+     "cetane": 52.5,
+     "density": 834.0,
+     "cost_rub_t": 47763.7341
+    },
+    {
+     "name": "Р-2 базовый режим",
+     "share": 0.9929,
+     "sulfur_mg_kg": 8.5,
+     "t95_c": 347.0,
+     "cetane": 51.2,
+     "density": 836.0,
+     "cost_rub_t": 47542.4932
+    }
+   ],
+   "additive_share": 0.0,
+   "blended": {
+    "CFPP": -8.028,
+    "Mg.Sulfur": 8.461,
+    "95%.T": 346.979,
+    "CetaneNumber": 51.209,
+    "D15": 835.986
+   },
+   "cost_rub_t": 47544.1,
+   "message": "расчётный предел по сере ужесточён на 1.54 мг/кг (90-й процентиль расхождения лаборатории и поточного анализатора). присадка не требуется"
+  },
+  "setpoint_plan": {
+   "target_sulfur": 7.71,
+   "required_temp_c": 370.0,
+   "current_temp_c": 363.43,
+   "delta_total_c": 6.57,
+   "steps": [
+    {
+     "шаг": 1,
+     "через, мин": 0,
+     "Δt, °C": 2.65,
+     "накопленное Δt, °C": 2.65
+    },
+    {
+     "шаг": 2,
+     "через, мин": 30,
+     "Δt, °C": 2.65,
+     "накопленное Δt, °C": 5.3
+    },
+    {
+     "шаг": 3,
+     "через, мин": 60,
+     "Δt, °C": 1.27,
+     "накопленное Δt, °C": 6.57
+    }
+   ],
+   "reachable": true,
+   "note": "требуется 3 шага(ов) по 30 мин: одношаговое изменение ограничено 2.7 °C (P95 фактической скорости изменения за 30 мин по истории)"
+  },
+  "state_hash": "ab790082f01de97d"
+ },
+ "state": {
+  "t": "2024-04-26T20:00:00",
+  "n_tags": 97,
+  "n_missing": 4,
+  "lab": {
+   "AVT_DIESEL_P1:50%.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "50%.T",
+    "value": 298.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T14:00:00",
+    "available_at": "2024-04-26T18:00:00",
+    "age_hours": 6.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:90%.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "90%.T",
+    "value": 325.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T14:00:00",
+    "available_at": "2024-04-26T18:00:00",
+    "age_hours": 6.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:95%.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "95%.T",
+    "value": 336.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T14:00:00",
+    "available_at": "2024-04-26T18:00:00",
+    "age_hours": 6.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:CloudPoint@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "CloudPoint",
+    "value": -2.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-03-01T14:00:00",
+    "available_at": "2024-03-01T18:00:00",
+    "age_hours": 1350.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:D15@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "D15",
+    "value": 869.0,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-04-22T14:00:00",
+    "available_at": "2024-04-22T18:00:00",
+    "age_hours": 102.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:EBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "EBP.T",
+    "value": 344.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T14:00:00",
+    "available_at": "2024-04-26T18:00:00",
+    "age_hours": 6.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:I350@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "I350",
+    "value": 0.0,
+    "unit": "vol%",
+    "source": "LIMS",
+    "measured_at": "2024-02-27T14:00:00",
+    "available_at": "2024-02-27T18:00:00",
+    "age_hours": 1422.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:IBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "IBP.T",
+    "value": 255.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T14:00:00",
+    "available_at": "2024-04-26T18:00:00",
+    "age_hours": 6.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:PourPoint@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "PourPoint",
+    "value": -13.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T14:00:00",
+    "available_at": "2024-04-26T18:00:00",
+    "age_hours": 6.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:50%.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "50%.T",
+    "value": 258.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:90%.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "90%.T",
+    "value": 274.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:95%.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "95%.T",
+    "value": 282.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:CloudPoint@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "CloudPoint",
+    "value": -30.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2023-11-21T14:00:00",
+    "available_at": "2023-11-21T18:00:00",
+    "age_hours": 3774.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:D15@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "D15",
+    "value": 820.5,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:EBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "EBP.T",
+    "value": 294.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:IBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "IBP.T",
+    "value": 190.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:50%.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "50%.T",
+    "value": 274.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:90%.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "90%.T",
+    "value": 324.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:95%.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "95%.T",
+    "value": 340.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:CloudPoint@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "CloudPoint",
+    "value": 2.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2023-11-21T14:00:00",
+    "available_at": "2023-11-21T18:00:00",
+    "age_hours": 3774.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:D15@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "D15",
+    "value": 843.8,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:EBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "EBP.T",
+    "value": 351.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:IBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "IBP.T",
+    "value": 179.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-21T15:00:00",
+    "available_at": "2024-04-21T19:00:00",
+    "age_hours": 125.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:50%.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "50%.T",
+    "value": 287.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:90%.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "90%.T",
+    "value": 341.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:95%.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "95%.T",
+    "value": 355.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:CloudPoint@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "CloudPoint",
+    "value": -1.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:D15@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "D15",
+    "value": 849.7999877929688,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-04-22T10:00:00",
+    "available_at": "2024-04-22T14:00:00",
+    "age_hours": 106.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:EBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "EBP.T",
+    "value": 361.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:FilterabilityLimit.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "FilterabilityLimit.T",
+    "value": -7.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-03-11T10:00:00",
+    "available_at": "2024-03-11T14:00:00",
+    "age_hours": 1114.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:IBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "IBP.T",
+    "value": 198.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:50%.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "50%.T",
+    "value": 281.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:90%.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "90%.T",
+    "value": 339.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:95%.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "95%.T",
+    "value": 352.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:CloudPoint@LIMS": {
+    "stream": "HT_FEED",
+    "param": "CloudPoint",
+    "value": -1.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:D15@LIMS": {
+    "stream": "HT_FEED",
+    "param": "D15",
+    "value": 848.2000122070312,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:EBP.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "EBP.T",
+    "value": 363.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:IBP.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "IBP.T",
+    "value": 193.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:Mass.Sulfur@LIMS": {
+    "stream": "HT_FEED",
+    "param": "Mass.Sulfur",
+    "value": 1.6,
+    "unit": "wt%",
+    "source": "СЦЕНАРИЙ (текущее сырьё)",
+    "measured_at": "2024-04-26T20:00:00",
+    "available_at": "2024-04-26T20:00:00",
+    "age_hours": 0.0,
+    "overridden": true
+   },
+   "HT_PRODUCT:50%.T@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "50%.T",
+    "value": 276.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:90%.T@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "90%.T",
+    "value": 335.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:95%.T@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "95%.T",
+    "value": 350.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:CFPP@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "CFPP",
+    "value": -4.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:CetaneNumber@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "CetaneNumber",
+    "value": 55.79999923706055,
+    "unit": "cetane",
+    "source": "LIMS",
+    "measured_at": "2024-04-25T10:00:00",
+    "available_at": "2024-04-25T14:00:00",
+    "age_hours": 34.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:CloudPoint@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "CloudPoint",
+    "value": -1.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:D15@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "D15",
+    "value": 835.2999877929688,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:FlashPoint@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "FlashPoint",
+    "value": 69.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:I250@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "I250",
+    "value": 20.0,
+    "unit": "vol%",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:I350@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "I350",
+    "value": 95.0,
+    "unit": "vol%",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:IBP.T@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "IBP.T",
+    "value": 184.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T10:00:00",
+    "available_at": "2024-04-26T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:Mg.Sulfur@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "Mg.Sulfur",
+    "value": 6.599999904632568,
+    "unit": "mg/kg",
+    "source": "LIMS",
+    "measured_at": "2024-04-26T16:00:00",
+    "available_at": "2024-04-26T20:00:00",
+    "age_hours": 4.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:Mg.Sulfur@PAK": {
+    "stream": "HT_PRODUCT",
+    "param": "Mg.Sulfur",
+    "value": 7.705160617828369,
+    "unit": "mg/kg",
+    "source": "PAK",
+    "measured_at": "2024-04-26T19:50:00",
+    "available_at": "2024-04-26T20:00:00",
+    "age_hours": 0.17,
+    "overridden": false
+   },
+   "HT_PRODUCT:PourPoint@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "PourPoint",
+    "value": -8.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-02-08T10:00:00",
+    "available_at": "2024-02-08T14:00:00",
+    "age_hours": 1882.0,
+    "overridden": false
+   }
+  }
+ },
+ "trace": [
+  {
+   "seq": 1,
+   "sender": "orchestrator",
+   "recipient": "data",
+   "topic": "assess.request",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "state": "<ProcessState>"
+   }
+  },
+  {
+   "seq": 2,
+   "sender": "data",
+   "recipient": "orchestrator",
+   "topic": "assess.response",
+   "elapsed_ms": 3.1,
+   "payload": {
+    "t": "2024-04-26T20:00:00",
+    "usable": true,
+    "score": 1.0,
+    "issues": [],
+    "freshness_h": {
+     "TELEMETRY": 0.0,
+     "PAK": 0.17,
+     "LIMS_feed_sulfur": 0.0,
+     "LIMS_product_sulfur": 4.0
+    },
+    "cross_check": {
+     "q21": 5.726,
+     "pak": 7.705,
+     "abs_diff": 1.979,
+     "regime_mahalanobis": 1.965
+    }
+   }
+  },
+  {
+   "seq": 3,
+   "sender": "orchestrator",
+   "recipient": "feed",
+   "topic": "assess.request",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "state": "<ProcessState>"
+   }
+  },
+  {
+   "seq": 4,
+   "sender": "feed",
+   "recipient": "orchestrator",
+   "topic": "assess.response",
+   "elapsed_ms": 1.2,
+   "payload": {
+    "t": "2024-04-26T20:00:00",
+    "sulfur_wt": 1.6,
+    "sulfur_source": "ЛИМС (свежий)",
+    "sulfur_age_h": 0.0,
+    "sulfur_confidence": 0.95,
+    "sulfur_prev_wt": 0.9862,
+    "unrealized_fraction": 1.0,
+    "t95_c": 352.0,
+    "d15": 848.2,
+    "avt_diesel_flow_t_h": 112.9,
+    "trend_note": "сера сырья изменилась с 0.986 до 1.600 % масс.; 100 % эффекта ещё не дошло до продукта"
+   }
+  },
+  {
+   "seq": 5,
+   "sender": "orchestrator",
+   "recipient": "quality",
+   "topic": "assess.request",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "state": "<ProcessState>",
+    "grade": "DT_SUMMER",
+    "feed": {
+     "t": "2024-04-26T20:00:00",
+     "sulfur_wt": 1.6,
+     "sulfur_source": "ЛИМС (свежий)",
+     "sulfur_age_h": 0.0,
+     "sulfur_confidence": 0.95,
+     "sulfur_prev_wt": 0.9862,
+     "unrealized_fraction": 1.0,
+     "t95_c": 352.0,
+     "d15": 848.2,
+     "avt_diesel_flow_t_h": 112.9,
+     "trend_note": "сера сырья изменилась с 0.986 до 1.600 % масс.; 100 % эффекта ещё не дошло до продукта"
+    },
+    "action": {
+     "d_temp_c": 0.0,
+     "d_load_pct": 0.0,
+     "d_press_mpa": 0.0,
+     "d_h2_pct": 0.0
+    },
+    "horizon_min": 120
+   }
+  },
+  {
+   "seq": 6,
+   "sender": "quality",
+   "recipient": "orchestrator",
+   "topic": "assess.response",
+   "elapsed_ms": 0.5,
+   "payload": {
+    "t": "2024-04-26T20:00:00",
+    "grade": "DT_SUMMER",
+    "items": [
+     {
+      "param": "Mg.Sulfur",
+      "ru_name": "Массовая концентрация серы",
+      "value": 6.6,
+      "unit": "мг/кг",
+      "source": "ЛИМС (контрольный факт)",
+      "age_h": 4.0,
+      "forecast": 8.507,
+      "lo": 4.838,
+      "hi": 11.605,
+      "limit": 10.0,
+      "limit_kind": "max",
+      "hard": true,
+      "exceed_prob": 0.157,
+      "margin": 1.493,
+      "risk_process": 0.09,
+      "risk_detail": {
+       "p_total": 0.157,
+       "p_process": 0.09,
+       "sigma_total": 1.492,
+       "sigma_measurement": 0.992,
+       "sigma_process": 1.114,
+       "target_for_10pct": 7.705
+      }
+     },
+     {
+      "param": "D15",
+      "ru_name": "Плотность при 15 °C",
+      "value": 835.3,
+      "unit": "kg/m3",
+      "source": "ЛИМС (10 ч)",
+      "age_h": 10.0,
+      "forecast": 835.3,
+      "lo": 832.228,
+      "hi": 838.372,
+      "limit": 845.0,
+      "limit_kind": "range",
+      "hard": true,
+      "exceed_prob": 0.0,
+      "margin": 9.7,
+      "risk_process": null,
+      "risk_detail": null
+     },
+     {
+      "param": "CetaneNumber",
+      "ru_name": "Цетановое число",
+      "value": 55.8,
+      "unit": "cetane",
+      "source": "ЛИМС (34 ч)",
+      "age_h": 34.0,
+      "forecast": 55.8,
+      "lo": 52.782,
+      "hi": 58.818,
+      "limit": 51.0,
+      "limit_kind": "min",
+      "hard": true,
+      "exceed_prob": 0.004,
+      "margin": 4.8,
+      "risk_process": null,
+      "risk_detail": null
+     },
+     {
+      "param": "95%.T",
+      "ru_name": "Температура выкипания 95 % об.",
+      "value": 350.0,
+      "unit": "degC",
+      "source": "ЛИМС (10 ч)",
+      "age_h": 10.0,
+      "forecast": 350.0,
+      "lo": 336.432,
+      "hi": 363.568,
+      "limit": 360.0,
+      "limit_kind": "max",
+      "hard": true,
+      "exceed_prob": 0.113,
+      "margin": 10.0,
+      "risk_process": null,
+      "risk_detail": null
+     },
+     {
+      "param": "CFPP",
+      "ru_name": "Предельная температура фильтруемости (ПТФ)",
+      "value": -4.0,
+      "unit": "degC",
+      "source": "ЛИМС (10 ч)",
+      "age_h": 10.0,
+      "forecast": -4.0,
+      "lo": -7.066,
+      "hi": -0.934,
+      "limit": -5.0,
+      "limit_kind": "max",
+      "hard": false,
+      "exceed_prob": 0.704,
+      "margin": -1.0,
+      "risk_process": null,
+      "risk_detail": null
+     },
+     {
+      "param": "FlashPoint",
+      "ru_name": "Температура вспышки",
+      "value": 69.0,
+      "unit": "degC",
+      "source": "ЛИМС (10 ч)",
+      "age_h": 10.0,
+      "forecast": 69.0,
+      "lo": 58.025,
+      "hi": 79.975,
+      "limit": 55.0,
+      "limit_kind": "min",
+      "hard": false,
+      "exceed_prob": 0.018,
+      "margin": 14.0,
+      "risk_process": null,
+      "risk_detail": null
+     }
+    ],
+    "confidence": 0.986,
+    "horizon_min": 120,
+    "worst_param": "Mg.Sulfur",
+    "worst_prob": 0.157,
+    "notes": []
+   }
+  },
+  {
+   "seq": 7,
+   "sender": "orchestrator",
+   "recipient": "reliability",
+   "topic": "assess.request",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "state": "<ProcessState>",
+    "action": {
+     "d_temp_c": 0.0,
+     "d_load_pct": 0.0,
+     "d_press_mpa": 0.0,
+     "d_h2_pct": 0.0
+    }
+   }
+  },
+  {
+   "seq": 8,
+   "sender": "reliability",
+   "recipient": "orchestrator",
+   "topic": "assess.response",
+   "elapsed_ms": 0.1,
+   "payload": {
+    "t": "2024-04-26T20:00:00",
+    "severity_index": 0.245,
+    "severity": "ok",
+    "factors": {
+     "wabt": 0.0,
+     "dp_reactor": 0.567,
+     "quench": 0.295,
+     "h2_to_oil": 0.295
+    },
+    "bounds": {
+     "d_temp_c": [
+      -4.985,
+      21.45
+     ]
+    },
+    "catalyst_days_left": 744.0,
+    "notes": []
+   }
+  },
+  {
+   "seq": 9,
+   "sender": "orchestrator",
+   "recipient": "optimizer",
+   "topic": "optimize.request",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "state": "<ProcessState>",
+    "grade": "DT_SUMMER",
+    "feed": {
+     "t": "2024-04-26T20:00:00",
+     "sulfur_wt": 1.6,
+     "sulfur_source": "ЛИМС (свежий)",
+     "sulfur_age_h": 0.0,
+     "sulfur_confidence": 0.95,
+     "sulfur_prev_wt": 0.9862,
+     "unrealized_fraction": 1.0,
+     "t95_c": 352.0,
+     "d15": 848.2,
+     "avt_diesel_flow_t_h": 112.9,
+     "trend_note": "сера сырья изменилась с 0.986 до 1.600 % масс.; 100 % эффекта ещё не дошло до продукта"
+    },
+    "reliability": {
+     "t": "2024-04-26T20:00:00",
+     "severity_index": 0.245,
+     "severity": "ok",
+     "factors": {
+      "wabt": 0.0,
+      "dp_reactor": 0.567,
+      "quench": 0.295,
+      "h2_to_oil": 0.295
+     },
+     "bounds": {
+      "d_temp_c": [
+       -4.985,
+       21.45
+      ]
+     },
+     "catalyst_days_left": 744.0,
+     "notes": []
+    },
+    "horizon_min": 120,
+    "quality_fn": "<function>",
+    "economics_fn": "<function>"
+   }
+  },
+  {
+   "seq": 10,
+   "sender": "optimizer",
+   "recipient": "*",
+   "topic": "optimizer.summary",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "всего вариантов в сетке": 315,
+    "прошли жёсткие ограничения": 314,
+    "соответствуют спецификации по риску": 0,
+    "на фронте Парето": 21,
+    "коридор температуры, °C": [
+     -2.65,
+     2.65
+    ]
+   }
+  },
+  {
+   "seq": 11,
+   "sender": "optimizer",
+   "recipient": "orchestrator",
+   "topic": "optimize.response",
+   "elapsed_ms": 150.3,
+   "payload": {
+    "всего вариантов": 315,
+    "показаны первые": 8,
+    "варианты": [
+     {
+      "option_id": "opt000",
+      "action": {
+       "d_temp_c": 0.0,
+       "d_load_pct": 0.0,
+       "d_press_mpa": 0.0,
+       "d_h2_pct": 0.0
+      },
+      "action_label": "режим без изменений",
+      "metrics": {
+       "quality_margin": 0.574,
+       "worst_exceed_prob": 0.157,
+       "throughput_t_h": 270.441,
+       "cost_rub_h": 1136295.259,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 13737948.755,
+       "violated": [
+        "Массовая концентрация серы: риск 16 %",
+        "Температура выкипания 95 % об.: риск 11 %"
+       ],
+       "compliant": 0
+      },
+      "score": 0.852,
+      "rank": 155,
+      "pareto": false,
+      "rationale": "",
+      "сера_прогноз": 8.51,
+      "риск": 0.157
+     },
+     {
+      "option_id": "opt001",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": -3.013,
+       "d_press_mpa": -0.2007,
+       "d_h2_pct": -2.732
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка -3.0 %, давление -0.20 МПа, расход ВСГ -2.7 %",
+      "metrics": {
+       "quality_margin": 0.555,
+       "worst_exceed_prob": 0.291,
+       "throughput_t_h": 262.293,
+       "cost_rub_h": 1094097.555,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 13332000.361,
+       "violated": [
+        "Массовая концентрация серы: риск 29 %"
+       ],
+       "compliant": 0
+      },
+      "score": 0.228,
+      "rank": 314,
+      "pareto": false,
+      "rationale": "",
+      "сера_прогноз": 9.19,
+      "риск": 0.291
+     },
+     {
+      "option_id": "opt002",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": -3.013,
+       "d_press_mpa": -0.2007,
+       "d_h2_pct": 0.0
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка -3.0 %, давление -0.20 МПа",
+      "metrics": {
+       "quality_margin": 0.555,
+       "worst_exceed_prob": 0.259,
+       "throughput_t_h": 262.293,
+       "cost_rub_h": 1094107.388,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 13331990.528,
+       "violated": [
+        "Массовая концентрация серы: риск 26 %"
+       ],
+       "compliant": 0
+      },
+      "score": 0.262,
+      "rank": 313,
+      "pareto": false,
+      "rationale": "",
+      "сера_прогноз": 9.05,
+      "риск": 0.259
+     },
+     {
+      "option_id": "opt003",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": -3.013,
+       "d_press_mpa": -0.2007,
+       "d_h2_pct": 2.732
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка -3.0 %, давление -0.20 МПа, расход ВСГ +2.7 %",
+      "metrics": {
+       "quality_margin": 0.555,
+       "worst_exceed_prob": 0.222,
+       "throughput_t_h": 262.293,
+       "cost_rub_h": 1094116.713,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 13331981.203,
+       "violated": [
+        "Массовая концентрация серы: риск 22 %"
+       ],
+       "compliant": 0
+      },
+      "score": 0.302,
+      "rank": 311,
+      "pareto": false,
+      "rationale": "",
+      "сера_прогноз": 8.92,
+      "риск": 0.222
+     },
+     {
+      "option_id": "opt004",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": -3.013,
+       "d_press_mpa": 0.0,
+       "d_h2_pct": -2.732
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка -3.0 %, расход ВСГ -2.7 %",
+      "metrics": {
+       "quality_margin": 0.555,
+       "worst_exceed_prob": 0.222,
+       "throughput_t_h": 262.293,
+       "cost_rub_h": 1094116.433,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 13331981.484,
+       "violated": [
+        "Массовая концентрация серы: риск 22 %"
+       ],
+       "compliant": 0
+      },
+      "score": 0.302,
+      "rank": 310,
+      "pareto": false,
+      "rationale": "",
+      "сера_прогноз": 8.92,
+      "риск": 0.222
+     },
+     {
+      "option_id": "opt005",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": -3.013,
+       "d_press_mpa": 0.0,
+       "d_h2_pct": 0.0
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка -3.0 %",
+      "metrics": {
+       "quality_margin": 0.555,
+       "worst_exceed_prob": 0.203,
+       "throughput_t_h": 262.293,
+       "cost_rub_h": 1094125.987,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 13331971.929,
+       "violated": [
+        "Массовая концентрация серы: риск 20 %"
+       ],
+       "compliant": 0
+      },
+      "score": 0.322,
+      "rank": 308,
+      "pareto": false,
+      "rationale": "",
+      "сера_прогноз": 8.78,
+      "риск": 0.203
+     },
+     {
+      "option_id": "opt006",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": -3.013,
+       "d_press_mpa": 0.0,
+       "d_h2_pct": 2.732
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка -3.0 %, расход ВСГ +2.7 %",
+      "metrics": {
+       "quality_margin": 0.555,
+       "worst_exceed_prob": 0.178,
+       "throughput_t_h": 262.293,
+       "cost_rub_h": 1094135.048,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 13331962.868,
+       "violated": [
+        "Массовая концентрация серы: риск 18 %"
+       ],
+       "compliant": 0
+      },
+      "score": 0.349,
+      "rank": 303,
+      "pareto": false,
+      "rationale": "",
+      "сера_прогноз": 8.65,
+      "риск": 0.178
+     },
+     {
+      "option_id": "opt007",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": -3.013,
+       "d_press_mpa": 0.2007,
+       "d_h2_pct": -2.732
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка -3.0 %, давление +0.20 МПа, расход ВСГ -2.7 %",
+      "metrics": {
+       "quality_margin": 0.555,
+       "worst_exceed_prob": 0.184,
+       "throughput_t_h": 262.293,
+       "cost_rub_h": 1094133.987,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 13331963.929,
+       "violated": [
+        "Массовая концентрация серы: риск 18 %"
+       ],
+       "compliant": 0
+      },
+      "score": 0.342,
+      "rank": 304,
+      "pareto": false,
+      "rationale": "",
+      "сера_прогноз": 8.67,
+      "риск": 0.184
+     }
+    ]
+   }
+  },
+  {
+   "seq": 12,
+   "sender": "orchestrator",
+   "recipient": "*",
+   "topic": "conflict.resolution",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "правило": "качество и жёсткие ограничения > надёжность > экономика > выпуск",
+    "допустимых вариантов": 314,
+    "на фронте Парето": 21,
+    "запрет надёжности": "ok"
+   }
+  },
+  {
+   "seq": 13,
+   "sender": "orchestrator",
+   "recipient": "*",
+   "topic": "setpoint.plan",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "target_sulfur": 7.71,
+    "required_temp_c": 370.0,
+    "current_temp_c": 363.43,
+    "delta_total_c": 6.57,
+    "steps": [
+     {
+      "шаг": 1,
+      "через, мин": 0,
+      "Δt, °C": 2.65,
+      "накопленное Δt, °C": 2.65
+     },
+     {
+      "шаг": 2,
+      "через, мин": 30,
+      "Δt, °C": 2.65,
+      "накопленное Δt, °C": 5.3
+     },
+     {
+      "шаг": 3,
+      "через, мин": 60,
+      "Δt, °C": 1.27,
+      "накопленное Δt, °C": 6.57
+     }
+    ],
+    "reachable": true,
+    "note": "требуется 3 шага(ов) по 30 мин: одношаговое изменение ограничено 2.7 °C (P95 фактической скорости изменения за 30 мин по истории)"
+   }
+  },
+  {
+   "seq": 14,
+   "sender": "orchestrator",
+   "recipient": "blending",
+   "topic": "plan.request",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "grade": "DT_SUMMER"
+   }
+  },
+  {
+   "seq": 15,
+   "sender": "blending",
+   "recipient": "orchestrator",
+   "topic": "plan.response",
+   "elapsed_ms": 2.2,
+   "payload": {
+    "grade": "DT_SUMMER",
+    "feasible": true,
+    "components": [
+     {
+      "name": "Р-1 глубокая очистка",
+      "share": 0.0071,
+      "sulfur_mg_kg": 3.0,
+      "t95_c": 344.0,
+      "cetane": 52.5,
+      "density": 834.0,
+      "cost_rub_t": 47763.7341
+     },
+     {
+      "name": "Р-2 базовый режим",
+      "share": 0.9929,
+      "sulfur_mg_kg": 8.5,
+      "t95_c": 347.0,
+      "cetane": 51.2,
+      "density": 836.0,
+      "cost_rub_t": 47542.4932
+     }
+    ],
+    "additive_share": 0.0,
+    "blended": {
+     "CFPP": -8.028,
+     "Mg.Sulfur": 8.461,
+     "95%.T": 346.979,
+     "CetaneNumber": 51.209,
+     "D15": 835.986
+    },
+    "cost_rub_t": 47544.1,
+    "message": "расчётный предел по сере ужесточён на 1.54 мг/кг (90-й процентиль расхождения лаборатории и поточного анализатора). присадка не требуется"
+   }
+  },
+  {
+   "seq": 16,
+   "sender": "orchestrator",
+   "recipient": "explainer",
+   "topic": "explain.request",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "rec": {
+     "t": "2024-04-26T20:00:00",
+     "decision": "act_best_effort",
+     "headline": "Спецификация не гарантирована: выбран режим минимального риска, прогноз серы 8.06 мг/кг (риск 12 % против 16 % при бездействии)",
+     "action_label": "температура реактора +0.9 °C, давление +0.20 МПа",
+     "option": {
+      "option_id": "opt205",
+      "action": {
+       "d_temp_c": 0.884,
+       "d_load_pct": 0.0,
+       "d_press_mpa": 0.2007,
+       "d_h2_pct": 0.0
+      },
+      "action_label": "температура реактора +0.9 °C, давление +0.20 МПа",
+      "metrics": {
+       "quality_margin": 0.58,
+       "worst_exceed_prob": 0.121,
+       "throughput_t_h": 270.441,
+       "cost_rub_h": 1139079.704,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 13735164.31,
+       "violated": [
+        "Массовая концентрация серы: риск 12 %",
+        "Температура выкипания 95 % об.: риск 12 %"
+       ],
+       "compliant": 0
+      },
+      "score": 0.887,
+      "rank": 123,
+      "pareto": true,
+      "rationale": "",
+      "predictions": {
+       "quality": {
+        "t": "2024-04-26T20:00:00",
+        "grade": "DT_SUMMER",
+        "items": [
+         {
+          "param": "Mg.Sulfur",
+          "ru_name": "Массовая концентрация серы",
+          "value": 6.6,
+          "unit": "мг/кг",
+          "source": "ЛИМС (контрольный факт)",
+          "age_h": 4.0,
+          "forecast": 8.056,
+          "lo": 3.667,
+          "hi": 11.762,
+          "limit": 10.0,
+          "limit_kind": "max",
+          "hard": true,
+          "exceed_prob": 0.121,
+          "margin": 1.944,
+          "risk_process": 0.04,
+          "risk_detail": {
+           "p_total": 0.121,
+           "p_process": 0.04,
+           "sigma_total": 1.492,
+           "sigma_measurement": 0.992,
+           "sigma_process": 1.114,
+           "target_for_10pct": 7.705
+          }
+         },
+         {
+          "param": "D15",
+          "ru_name": "Плотность при 15 °C",
+          "value": 835.3,
+          "unit": "kg/m3",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 835.192,
+          "lo": 832.12,
+          "hi": 838.264,
+          "limit": 845.0,
+          "limit_kind": "range",
+          "hard": true,
+          "exceed_prob": 0.0,
+          "margin": 9.808,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "CetaneNumber",
+          "ru_name": "Цетановое число",
+          "value": 55.8,
+          "unit": "cetane",
+          "source": "ЛИМС (34 ч)",
+          "age_h": 34.0,
+          "forecast": 55.821,
+          "lo": 52.803,
+          "hi": 58.84,
+          "limit": 51.0,
+          "limit_kind": "min",
+          "hard": true,
+          "exceed_prob": 0.004,
+          "margin": 4.821,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "95%.T",
+          "ru_name": "Температура выкипания 95 % об.",
+          "value": 350.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 350.215,
+          "lo": 336.647,
+          "hi": 363.783,
+          "limit": 360.0,
+          "limit_kind": "max",
+          "hard": true,
+          "exceed_prob": 0.118,
+          "margin": 9.785,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "CFPP",
+          "ru_name": "Предельная температура фильтруемости (ПТФ)",
+          "value": -4.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": -3.905,
+          "lo": -6.971,
+          "hi": -0.839,
+          "limit": -5.0,
+          "limit_kind": "max",
+          "hard": false,
+          "exceed_prob": 0.722,
+          "margin": -1.095,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "FlashPoint",
+          "ru_name": "Температура вспышки",
+          "value": 69.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 68.871,
+          "lo": 57.896,
+          "hi": 79.846,
+          "limit": 55.0,
+          "limit_kind": "min",
+          "hard": false,
+          "exceed_prob": 0.019,
+          "margin": 13.871,
+          "risk_process": null,
+          "risk_detail": null
+         }
+        ],
+        "confidence": 0.943,
+        "horizon_min": 120,
+        "worst_param": "Mg.Sulfur",
+        "worst_prob": 0.121,
+        "notes": []
+       },
+       "economics": {
+        "cost_rub_h": 1139079.7041246847,
+        "fuel_rub_h": -13909.267950613536,
+        "h2_rub_h": 1150416.522345601,
+        "recycle_rub_h": 98.719017329179,
+        "catalyst_rub_h": 2473.7307123679984,
+        "throughput_t_h": 270.44080025809154,
+        "gross_revenue_rub_h": 14874244.014195034,
+        "margin_rub_h": 13735164.310070349,
+        "catalyst_days_left": 707.4335097391415
+       },
+       "reliability": {
+        "t": "2024-04-26T20:00:00",
+        "severity_index": 0.245,
+        "severity": "ok",
+        "factors": {
+         "wabt": 0.0,
+         "dp_reactor": 0.567,
+         "quench": 0.295,
+         "h2_to_oil": 0.295
+        },
+        "bounds": {
+         "d_temp_c": [
+          -4.985,
+          21.45
+         ]
+        },
+        "catalyst_days_left": 707.0,
+        "notes": []
+       }
+      }
+     },
+     "alternatives": [
+      {
+       "option_id": "opt038",
+       "action": {
+        "d_temp_c": -2.651,
+        "d_load_pct": 3.013,
+        "d_press_mpa": -0.2007,
+        "d_h2_pct": 0.0
+       },
+       "action_label": "температура реактора -2.7 °C, загрузка +3.0 %, давление -0.20 МПа",
+       "metrics": {
+        "quality_margin": 0.479,
+        "worst_exceed_prob": 0.485,
+        "throughput_t_h": 278.589,
+        "cost_rub_h": 1161901.748,
+        "severity_index": 0.245,
+        "feasible": 1,
+        "margin_rub_h": 14160488.364,
+        "violated": [
+         "Массовая концентрация серы: риск 49 %"
+        ],
+        "compliant": 0
+       },
+       "score": 1.0,
+       "rank": 106,
+       "pareto": true,
+       "rationale": "",
+       "predictions": {
+        "quality": {
+         "t": "2024-04-26T20:00:00",
+         "grade": "DT_SUMMER",
+         "items": [
+          {
+           "param": "Mg.Sulfur",
+           "ru_name": "Массовая концентрация серы",
+           "value": 6.6,
+           "unit": "мг/кг",
+           "source": "ЛИМС (контрольный факт)",
+           "age_h": 4.0,
+           "forecast": 9.904,
+           "lo": 4.25,
+           "hi": 14.679,
+           "limit": 10.0,
+           "limit_kind": "max",
+           "hard": true,
+           "exceed_prob": 0.485,
+           "margin": 0.096,
+           "risk_process": 0.466,
+           "risk_detail": {
+            "p_total": 0.485,
+            "p_process": 0.466,
+            "sigma_total": 1.492,
+            "sigma_measurement": 0.992,
+            "sigma_process": 1.114,
+            "target_for_10pct": 7.705
+           }
+          },
+          {
+           "param": "D15",
+           "ru_name": "Плотность при 15 °C",
+           "value": 835.3,
+           "unit": "kg/m3",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": 835.622,
+           "lo": 832.55,
+           "hi": 838.694,
+           "limit": 845.0,
+           "limit_kind": "range",
+           "hard": true,
+           "exceed_prob": 0.0,
+           "margin": 9.378,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "CetaneNumber",
+           "ru_name": "Цетановое число",
+           "value": 55.8,
+           "unit": "cetane",
+           "source": "ЛИМС (34 ч)",
+           "age_h": 34.0,
+           "forecast": 55.736,
+           "lo": 52.717,
+           "hi": 58.754,
+           "limit": 51.0,
+           "limit_kind": "min",
+           "hard": true,
+           "exceed_prob": 0.005,
+           "margin": 4.736,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "95%.T",
+           "ru_name": "Температура выкипания 95 % об.",
+           "value": 350.0,
+           "unit": "degC",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": 349.355,
+           "lo": 335.787,
+           "hi": 362.923,
+           "limit": 360.0,
+           "limit_kind": "max",
+           "hard": true,
+           "exceed_prob": 0.098,
+           "margin": 10.645,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "CFPP",
+           "ru_name": "Предельная температура фильтруемости (ПТФ)",
+           "value": -4.0,
+           "unit": "degC",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": -4.285,
+           "lo": -7.351,
+           "hi": -1.219,
+           "limit": -5.0,
+           "limit_kind": "max",
+           "hard": false,
+           "exceed_prob": 0.649,
+           "margin": -0.715,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "FlashPoint",
+           "ru_name": "Температура вспышки",
+           "value": 69.0,
+           "unit": "degC",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": 69.387,
+           "lo": 58.412,
+           "hi": 80.362,
+           "limit": 55.0,
+           "limit_kind": "min",
+           "hard": false,
+           "exceed_prob": 0.016,
+           "margin": 14.387,
+           "risk_process": null,
+           "risk_detail": null
+          }
+         ],
+         "confidence": 0.885,
+         "horizon_min": 120,
+         "worst_param": "Mg.Sulfur",
+         "worst_prob": 0.485,
+         "notes": []
+        },
+        "economics": {
+         "cost_rub_h": 1161901.7476193395,
+         "fuel_rub_h": -25160.350750544596,
+         "h2_rub_h": 1184940.454312463,
+         "recycle_rub_h": 104.75724071897424,
+         "catalyst_rub_h": 2016.8868167020448,
+         "throughput_t_h": 278.5889111290676,
+         "gross_revenue_rub_h": 15322390.112098716,
+         "margin_rub_h": 14160488.364479376,
+         "catalyst_days_left": 867.6738751565393
+        },
+        "reliability": {
+         "t": "2024-04-26T20:00:00",
+         "severity_index": 0.245,
+         "severity": "ok",
+         "factors": {
+          "wabt": 0.0,
+          "dp_reactor": 0.567,
+          "quench": 0.295,
+          "h2_to_oil": 0.295
+         },
+         "bounds": {
+          "d_temp_c": [
+           -4.985,
+           21.45
+          ]
+         },
+         "catalyst_days_left": 868.0,
+         "notes": []
+        }
+       }
+      },
+      {
+       "option_id": "opt039",
+       "action": {
+        "d_temp_c": -2.651,
+        "d_load_pct": 3.013,
+        "d_press_mpa": -0.2007,
+        "d_h2_pct": 2.732
+       },
+       "action_label": "температура реактора -2.7 °C, загрузка +3.0 %, давление -0.20 МПа, расход ВСГ +2.7 %",
+       "metrics": {
+        "quality_margin": 0.555,
+        "worst_exceed_prob": 0.433,
+        "throughput_t_h": 278.589,
+        "cost_rub_h": 1161912.809,
+        "severity_index": 0.245,
+        "feasible": 1,
+        "margin_rub_h": 14160477.303,
+        "violated": [
+         "Массовая концентрация серы: риск 43 %"
+        ],
+        "compliant": 0
+       },
+       "score": 1.056,
+       "rank": 91,
+       "pareto": true,
+       "rationale": "",
+       "predictions": {
+        "quality": {
+         "t": "2024-04-26T20:00:00",
+         "grade": "DT_SUMMER",
+         "items": [
+          {
+           "param": "Mg.Sulfur",
+           "ru_name": "Массовая концентрация серы",
+           "value": 6.6,
+           "unit": "мг/кг",
+           "source": "ЛИМС (контрольный факт)",
+           "age_h": 4.0,
+           "forecast": 9.755,
+           "lo": 4.33,
+           "hi": 14.336,
+           "limit": 10.0,
+           "limit_kind": "max",
+           "hard": true,
+           "exceed_prob": 0.433,
+           "margin": 0.245,
+           "risk_process": 0.413,
+           "risk_detail": {
+            "p_total": 0.433,
+            "p_process": 0.413,
+            "sigma_total": 1.492,
+            "sigma_measurement": 0.992,
+            "sigma_process": 1.114,
+            "target_for_10pct": 7.705
+           }
+          },
+          {
+           "param": "D15",
+           "ru_name": "Плотность при 15 °C",
+           "value": 835.3,
+           "unit": "kg/m3",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": 835.622,
+           "lo": 832.55,
+           "hi": 838.694,
+           "limit": 845.0,
+           "limit_kind": "range",
+           "hard": true,
+           "exceed_prob": 0.0,
+           "margin": 9.378,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "CetaneNumber",
+           "ru_name": "Цетановое число",
+           "value": 55.8,
+           "unit": "cetane",
+           "source": "ЛИМС (34 ч)",
+           "age_h": 34.0,
+           "forecast": 55.736,
+           "lo": 52.717,
+           "hi": 58.754,
+           "limit": 51.0,
+           "limit_kind": "min",
+           "hard": true,
+           "exceed_prob": 0.005,
+           "margin": 4.736,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "95%.T",
+           "ru_name": "Температура выкипания 95 % об.",
+           "value": 350.0,
+           "unit": "degC",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": 349.355,
+           "lo": 335.787,
+           "hi": 362.923,
+           "limit": 360.0,
+           "limit_kind": "max",
+           "hard": true,
+           "exceed_prob": 0.098,
+           "margin": 10.645,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "CFPP",
+           "ru_name": "Предельная температура фильтруемости (ПТФ)",
+           "value": -4.0,
+           "unit": "degC",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": -4.285,
+           "lo": -7.351,
+           "hi": -1.219,
+           "limit": -5.0,
+           "limit_kind": "max",
+           "hard": false,
+           "exceed_prob": 0.649,
+           "margin": -0.715,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "FlashPoint",
+           "ru_name": "Температура вспышки",
+           "value": 69.0,
+           "unit": "degC",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": 69.387,
+           "lo": 58.412,
+           "hi": 80.362,
+           "limit": 55.0,
+           "limit_kind": "min",
+           "hard": false,
+           "exceed_prob": 0.016,
+           "margin": 14.387,
+           "risk_process": null,
+           "risk_detail": null
+          }
+         ],
+         "confidence": 0.894,
+         "horizon_min": 120,
+         "worst_param": "Mg.Sulfur",
+         "worst_prob": 0.433,
+         "notes": []
+        },
+        "economics": {
+         "cost_rub_h": 1161912.8092718904,
+         "fuel_rub_h": -25160.350750544596,
+         "h2_rub_h": 1184951.515965014,
+         "recycle_rub_h": 104.75724071897424,
+         "catalyst_rub_h": 2016.8868167020448,
+         "throughput_t_h": 278.5889111290676,
+         "gross_revenue_rub_h": 15322390.112098716,
+         "margin_rub_h": 14160477.302826826,
+         "catalyst_days_left": 867.6738751565393
+        },
+        "reliability": {
+         "t": "2024-04-26T20:00:00",
+         "severity_index": 0.245,
+         "severity": "ok",
+         "factors": {
+          "wabt": 0.0,
+          "dp_reactor": 0.567,
+          "quench": 0.295,
+          "h2_to_oil": 0.295
+         },
+         "bounds": {
+          "d_temp_c": [
+           -4.985,
+           21.45
+          ]
+         },
+         "catalyst_days_left": 868.0,
+         "notes": []
+        }
+       }
+      },
+      {
+       "option_id": "opt040",
+       "action": {
+        "d_temp_c": -2.651,
+        "d_load_pct": 3.013,
+        "d_press_mpa": 0.0,
+        "d_h2_pct": -2.732
+       },
+       "action_label": "температура реактора -2.7 °C, загрузка +3.0 %, расход ВСГ -2.7 %",
+       "metrics": {
+        "quality_margin": 0.555,
+        "worst_exceed_prob": 0.437,
+        "throughput_t_h": 278.589,
+        "cost_rub_h": 1161911.951,
+        "severity_index": 0.245,
+        "feasible": 1,
+        "margin_rub_h": 14160478.161,
+        "violated": [
+         "Массовая концентрация серы: риск 44 %"
+        ],
+        "compliant": 0
+       },
+       "score": 1.052,
+       "rank": 93,
+       "pareto": true,
+       "rationale": "",
+       "predictions": {
+        "quality": {
+         "t": "2024-04-26T20:00:00",
+         "grade": "DT_SUMMER",
+         "items": [
+          {
+           "param": "Mg.Sulfur",
+           "ru_name": "Массовая концентрация серы",
+           "value": 6.6,
+           "unit": "мг/кг",
+           "source": "ЛИМС (контрольный факт)",
+           "age_h": 4.0,
+           "forecast": 9.767,
+           "lo": 4.325,
+           "hi": 14.362,
+           "limit": 10.0,
+           "limit_kind": "max",
+           "hard": true,
+           "exceed_prob": 0.437,
+           "margin": 0.233,
+           "risk_process": 0.417,
+           "risk_detail": {
+            "p_total": 0.437,
+            "p_process": 0.417,
+            "sigma_total": 1.492,
+            "sigma_measurement": 0.992,
+            "sigma_process": 1.114,
+            "target_for_10pct": 7.705
+           }
+          },
+          {
+           "param": "D15",
+           "ru_name": "Плотность при 15 °C",
+           "value": 835.3,
+           "unit": "kg/m3",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": 835.622,
+           "lo": 832.55,
+           "hi": 838.694,
+           "limit": 845.0,
+           "limit_kind": "range",
+           "hard": true,
+           "exceed_prob": 0.0,
+           "margin": 9.378,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "CetaneNumber",
+           "ru_name": "Цетановое число",
+           "value": 55.8,
+           "unit": "cetane",
+           "source": "ЛИМС (34 ч)",
+           "age_h": 34.0,
+           "forecast": 55.736,
+           "lo": 52.717,
+           "hi": 58.754,
+           "limit": 51.0,
+           "limit_kind": "min",
+           "hard": true,
+           "exceed_prob": 0.005,
+           "margin": 4.736,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "95%.T",
+           "ru_name": "Температура выкипания 95 % об.",
+           "value": 350.0,
+           "unit": "degC",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": 349.355,
+           "lo": 335.787,
+           "hi": 362.923,
+           "limit": 360.0,
+           "limit_kind": "max",
+           "hard": true,
+           "exceed_prob": 0.098,
+           "margin": 10.645,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "CFPP",
+           "ru_name": "Предельная температура фильтруемости (ПТФ)",
+           "value": -4.0,
+           "unit": "degC",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": -4.285,
+           "lo": -7.351,
+           "hi": -1.219,
+           "limit": -5.0,
+           "limit_kind": "max",
+           "hard": false,
+           "exceed_prob": 0.649,
+           "margin": -0.715,
+           "risk_process": null,
+           "risk_detail": null
+          },
+          {
+           "param": "FlashPoint",
+           "ru_name": "Температура вспышки",
+           "value": 69.0,
+           "unit": "degC",
+           "source": "ЛИМС (10 ч)",
+           "age_h": 10.0,
+           "forecast": 69.387,
+           "lo": 58.412,
+           "hi": 80.362,
+           "limit": 55.0,
+           "limit_kind": "min",
+           "hard": false,
+           "exceed_prob": 0.016,
+           "margin": 14.387,
+           "risk_process": null,
+           "risk_detail": null
+          }
+         ],
+         "confidence": 0.894,
+         "horizon_min": 120,
+         "worst_param": "Mg.Sulfur",
+         "worst_prob": 0.437,
+         "notes": []
+        },
+        "economics": {
+         "cost_rub_h": 1161911.9507715888,
+         "fuel_rub_h": -25160.350750544596,
+         "h2_rub_h": 1184950.6574647124,
+         "recycle_rub_h": 104.75724071897424,
+         "catalyst_rub_h": 2016.8868167020448,
+         "throughput_t_h": 278.5889111290676,
+         "gross_revenue_rub_h": 15322390.112098716,
+         "margin_rub_h": 14160478.161327127,
+         "catalyst_days_left": 867.6738751565393
+        },
+        "reliability": {
+         "t": "2024-04-26T20:00:00",
+         "severity_index": 0.245,
+         "severity": "ok",
+         "factors": {
+          "wabt": 0.0,
+          "dp_reactor": 0.567,
+          "quench": 0.295,
+          "h2_to_oil": 0.295
+         },
+         "bounds": {
+          "d_temp_c": [
+           -4.985,
+           21.45
+          ]
+         },
+         "catalyst_days_left": 868.0,
+         "notes": []
+        }
+       }
+      }
+     ],
+     "constraint_table": [
+      {
+       "name": "Массовая концентрация серы (жёсткое)",
+       "forecast": "8.06",
+       "limit": "≤ 10.0",
+       "margin": "1.94",
+       "risk": "12 %",
+       "verdict": "риск выше допустимого"
+      },
+      {
+       "name": "Плотность при 15 °C (жёсткое)",
+       "forecast": "835.19",
+       "limit": "диапазон, верх 845.0",
+       "margin": "9.81",
+       "risk": "0 %",
+       "verdict": "выполнено"
+      },
+      {
+       "name": "Цетановое число (жёсткое)",
+       "forecast": "55.82",
+       "limit": "≥ 51.0",
+       "margin": "4.82",
+       "risk": "0 %",
+       "verdict": "выполнено"
+      },
+      {
+       "name": "Температура выкипания 95 % об. (жёсткое)",
+       "forecast": "350.21",
+       "limit": "≤ 360.0",
+       "margin": "9.79",
+       "risk": "12 %",
+       "verdict": "риск выше допустимого"
+      },
+      {
+       "name": "Предельная температура фильтруемости (ПТФ) (рекоменд.)",
+       "forecast": "-3.91",
+       "limit": "≤ -5.0",
+       "margin": "-1.09",
+       "risk": "72 %",
+       "verdict": "НЕ ВЫПОЛНЕНО"
+      },
+      {
+       "name": "Температура вспышки (рекоменд.)",
+       "forecast": "68.87",
+       "limit": "≥ 55.0",
+       "margin": "13.87",
+       "risk": "2 %",
+       "verdict": "выполнено"
+      }
+     ],
+     "confidence": 0.943,
+     "reasons": [
+      "ни один вариант не обеспечивает риск нарушения ниже 10 %: выбран режим МИНИМАЛЬНОГО РИСКА, остаточный риск по показателю «Массовая концентрация серы» 12 %. Основная причина — разброс между лабораторией и поточным анализатором, а не режим установки",
+      "из 314 допустимых вариантов 21 находятся на фронте Парето; выбран лучший по свёртке с приоритетом качества",
+      "относительно бездействия риск нарушения снижается на 4 п.п. ценой 2 784 ₽/ч переменных затрат",
+      "ресурс цикла катализатора при выбранном режиме — 707 сут"
+     ],
+     "expected_effect": {
+      "сера через горизонт": "8.51 → 8.06 мг/кг (интервал 90 % [3.67; 11.76])",
+      "риск нарушения по сере (лаб.)": "16 % → 12 %",
+      "в том числе технологический риск": "4 % (остальное — расхождение лаборатории и поточного анализатора, σ=0.99 мг/кг)",
+      "выпуск": "270.4 т/ч",
+      "переменные затраты": "1 139 080 ₽/ч",
+      "тяжесть режима": "индекс 0.25 (ok)",
+      "ресурс катализатора": "707 сут",
+      "эффект против бездействия": "риск снижается на 4 п.п.; переменные затраты выше на 2 784 ₽/ч; выпуск +0.0 т/ч"
+     },
+     "blend": {
+      "grade": "DT_SUMMER",
+      "feasible": true,
+      "components": [
+       {
+        "name": "Р-1 глубокая очистка",
+        "share": 0.0071,
+        "sulfur_mg_kg": 3.0,
+        "t95_c": 344.0,
+        "cetane": 52.5,
+        "density": 834.0,
+        "cost_rub_t": 47763.7341
+       },
+       {
+        "name": "Р-2 базовый режим",
+        "share": 0.9929,
+        "sulfur_mg_kg": 8.5,
+        "t95_c": 347.0,
+        "cetane": 51.2,
+        "density": 836.0,
+        "cost_rub_t": 47542.4932
+       }
+      ],
+      "additive_share": 0.0,
+      "blended": {
+       "CFPP": -8.028,
+       "Mg.Sulfur": 8.461,
+       "95%.T": 346.979,
+       "CetaneNumber": 51.209,
+       "D15": 835.986
+      },
+      "cost_rub_t": 47544.1,
+      "message": "расчётный предел по сере ужесточён на 1.54 мг/кг (90-й процентиль расхождения лаборатории и поточного анализатора). присадка не требуется"
+     },
+     "setpoint_plan": {
+      "target_sulfur": 7.71,
+      "required_temp_c": 370.0,
+      "current_temp_c": 363.43,
+      "delta_total_c": 6.57,
+      "steps": [
+       {
+        "шаг": 1,
+        "через, мин": 0,
+        "Δt, °C": 2.65,
+        "накопленное Δt, °C": 2.65
+       },
+       {
+        "шаг": 2,
+        "через, мин": 30,
+        "Δt, °C": 2.65,
+        "накопленное Δt, °C": 5.3
+       },
+       {
+        "шаг": 3,
+        "через, мин": 60,
+        "Δt, °C": 1.27,
+        "накопленное Δt, °C": 6.57
+       }
+      ],
+      "reachable": true,
+      "note": "требуется 3 шага(ов) по 30 мин: одношаговое изменение ограничено 2.7 °C (P95 фактической скорости изменения за 30 мин по истории)"
+     },
+     "state_hash": "ab790082f01de97d"
+    },
+    "dq": {
+     "t": "2024-04-26T20:00:00",
+     "usable": true,
+     "score": 1.0,
+     "issues": [],
+     "freshness_h": {
+      "TELEMETRY": 0.0,
+      "PAK": 0.17,
+      "LIMS_feed_sulfur": 0.0,
+      "LIMS_product_sulfur": 4.0
+     },
+     "cross_check": {
+      "q21": 5.726,
+      "pak": 7.705,
+      "abs_diff": 1.979,
+      "regime_mahalanobis": 1.965
+     }
+    },
+    "feed": {
+     "t": "2024-04-26T20:00:00",
+     "sulfur_wt": 1.6,
+     "sulfur_source": "ЛИМС (свежий)",
+     "sulfur_age_h": 0.0,
+     "sulfur_confidence": 0.95,
+     "sulfur_prev_wt": 0.9862,
+     "unrealized_fraction": 1.0,
+     "t95_c": 352.0,
+     "d15": 848.2,
+     "avt_diesel_flow_t_h": 112.9,
+     "trend_note": "сера сырья изменилась с 0.986 до 1.600 % масс.; 100 % эффекта ещё не дошло до продукта"
+    },
+    "quality": {
+     "t": "2024-04-26T20:00:00",
+     "grade": "DT_SUMMER",
+     "items": [
+      {
+       "param": "Mg.Sulfur",
+       "ru_name": "Массовая концентрация серы",
+       "value": 6.6,
+       "unit": "мг/кг",
+       "source": "ЛИМС (контрольный факт)",
+       "age_h": 4.0,
+       "forecast": 8.056,
+       "lo": 3.667,
+       "hi": 11.762,
+       "limit": 10.0,
+       "limit_kind": "max",
+       "hard": true,
+       "exceed_prob": 0.121,
+       "margin": 1.944,
+       "risk_process": 0.04,
+       "risk_detail": {
+        "p_total": 0.121,
+        "p_process": 0.04,
+        "sigma_total": 1.492,
+        "sigma_measurement": 0.992,
+        "sigma_process": 1.114,
+        "target_for_10pct": 7.705
+       }
+      },
+      {
+       "param": "D15",
+       "ru_name": "Плотность при 15 °C",
+       "value": 835.3,
+       "unit": "kg/m3",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": 835.192,
+       "lo": 832.12,
+       "hi": 838.264,
+       "limit": 845.0,
+       "limit_kind": "range",
+       "hard": true,
+       "exceed_prob": 0.0,
+       "margin": 9.808,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "CetaneNumber",
+       "ru_name": "Цетановое число",
+       "value": 55.8,
+       "unit": "cetane",
+       "source": "ЛИМС (34 ч)",
+       "age_h": 34.0,
+       "forecast": 55.821,
+       "lo": 52.803,
+       "hi": 58.84,
+       "limit": 51.0,
+       "limit_kind": "min",
+       "hard": true,
+       "exceed_prob": 0.004,
+       "margin": 4.821,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "95%.T",
+       "ru_name": "Температура выкипания 95 % об.",
+       "value": 350.0,
+       "unit": "degC",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": 350.215,
+       "lo": 336.647,
+       "hi": 363.783,
+       "limit": 360.0,
+       "limit_kind": "max",
+       "hard": true,
+       "exceed_prob": 0.118,
+       "margin": 9.785,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "CFPP",
+       "ru_name": "Предельная температура фильтруемости (ПТФ)",
+       "value": -4.0,
+       "unit": "degC",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": -3.905,
+       "lo": -6.971,
+       "hi": -0.839,
+       "limit": -5.0,
+       "limit_kind": "max",
+       "hard": false,
+       "exceed_prob": 0.722,
+       "margin": -1.095,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "FlashPoint",
+       "ru_name": "Температура вспышки",
+       "value": 69.0,
+       "unit": "degC",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": 68.871,
+       "lo": 57.896,
+       "hi": 79.846,
+       "limit": 55.0,
+       "limit_kind": "min",
+       "hard": false,
+       "exceed_prob": 0.019,
+       "margin": 13.871,
+       "risk_process": null,
+       "risk_detail": null
+      }
+     ],
+     "confidence": 0.943,
+     "horizon_min": 120,
+     "worst_param": "Mg.Sulfur",
+     "worst_prob": 0.121,
+     "notes": []
+    },
+    "reliability": {
+     "t": "2024-04-26T20:00:00",
+     "severity_index": 0.245,
+     "severity": "ok",
+     "factors": {
+      "wabt": 0.0,
+      "dp_reactor": 0.567,
+      "quench": 0.295,
+      "h2_to_oil": 0.295
+     },
+     "bounds": {
+      "d_temp_c": [
+       -4.985,
+       21.45
+      ]
+     },
+     "catalyst_days_left": 707.0,
+     "notes": []
+    },
+    "chosen": {
+     "option_id": "opt205",
+     "action": {
+      "d_temp_c": 0.884,
+      "d_load_pct": 0.0,
+      "d_press_mpa": 0.2007,
+      "d_h2_pct": 0.0
+     },
+     "action_label": "температура реактора +0.9 °C, давление +0.20 МПа",
+     "metrics": {
+      "quality_margin": 0.58,
+      "worst_exceed_prob": 0.121,
+      "throughput_t_h": 270.441,
+      "cost_rub_h": 1139079.704,
+      "severity_index": 0.245,
+      "feasible": 1,
+      "margin_rub_h": 13735164.31,
+      "violated": [
+       "Массовая концентрация серы: риск 12 %",
+       "Температура выкипания 95 % об.: риск 12 %"
+      ],
+      "compliant": 0
+     },
+     "score": 0.887,
+     "rank": 123,
+     "pareto": true,
+     "rationale": "",
+     "predictions": {
+      "quality": {
+       "t": "2024-04-26T20:00:00",
+       "grade": "DT_SUMMER",
+       "items": [
+        {
+         "param": "Mg.Sulfur",
+         "ru_name": "Массовая концентрация серы",
+         "value": 6.6,
+         "unit": "мг/кг",
+         "source": "ЛИМС (контрольный факт)",
+         "age_h": 4.0,
+         "forecast": 8.056,
+         "lo": 3.667,
+         "hi": 11.762,
+         "limit": 10.0,
+         "limit_kind": "max",
+         "hard": true,
+         "exceed_prob": 0.121,
+         "margin": 1.944,
+         "risk_process": 0.04,
+         "risk_detail": {
+          "p_total": 0.121,
+          "p_process": 0.04,
+          "sigma_total": 1.492,
+          "sigma_measurement": 0.992,
+          "sigma_process": 1.114,
+          "target_for_10pct": 7.705
+         }
+        },
+        {
+         "param": "D15",
+         "ru_name": "Плотность при 15 °C",
+         "value": 835.3,
+         "unit": "kg/m3",
+         "source": "ЛИМС (10 ч)",
+         "age_h": 10.0,
+         "forecast": 835.192,
+         "lo": 832.12,
+         "hi": 838.264,
+         "limit": 845.0,
+         "limit_kind": "range",
+         "hard": true,
+         "exceed_prob": 0.0,
+         "margin": 9.808,
+         "risk_process": null,
+         "risk_detail": null
+        },
+        {
+         "param": "CetaneNumber",
+         "ru_name": "Цетановое число",
+         "value": 55.8,
+         "unit": "cetane",
+         "source": "ЛИМС (34 ч)",
+         "age_h": 34.0,
+         "forecast": 55.821,
+         "lo": 52.803,
+         "hi": 58.84,
+         "limit": 51.0,
+         "limit_kind": "min",
+         "hard": true,
+         "exceed_prob": 0.004,
+         "margin": 4.821,
+         "risk_process": null,
+         "risk_detail": null
+        },
+        {
+         "param": "95%.T",
+         "ru_name": "Температура выкипания 95 % об.",
+         "value": 350.0,
+         "unit": "degC",
+         "source": "ЛИМС (10 ч)",
+         "age_h": 10.0,
+         "forecast": 350.215,
+         "lo": 336.647,
+         "hi": 363.783,
+         "limit": 360.0,
+         "limit_kind": "max",
+         "hard": true,
+         "exceed_prob": 0.118,
+         "margin": 9.785,
+         "risk_process": null,
+         "risk_detail": null
+        },
+        {
+         "param": "CFPP",
+         "ru_name": "Предельная температура фильтруемости (ПТФ)",
+         "value": -4.0,
+         "unit": "degC",
+         "source": "ЛИМС (10 ч)",
+         "age_h": 10.0,
+         "forecast": -3.905,
+         "lo": -6.971,
+         "hi": -0.839,
+         "limit": -5.0,
+         "limit_kind": "max",
+         "hard": false,
+         "exceed_prob": 0.722,
+         "margin": -1.095,
+         "risk_process": null,
+         "risk_detail": null
+        },
+        {
+         "param": "FlashPoint",
+         "ru_name": "Температура вспышки",
+         "value": 69.0,
+         "unit": "degC",
+         "source": "ЛИМС (10 ч)",
+         "age_h": 10.0,
+         "forecast": 68.871,
+         "lo": 57.896,
+         "hi": 79.846,
+         "limit": 55.0,
+         "limit_kind": "min",
+         "hard": false,
+         "exceed_prob": 0.019,
+         "margin": 13.871,
+         "risk_process": null,
+         "risk_detail": null
+        }
+       ],
+       "confidence": 0.943,
+       "horizon_min": 120,
+       "worst_param": "Mg.Sulfur",
+       "worst_prob": 0.121,
+       "notes": []
+      },
+      "economics": {
+       "cost_rub_h": 1139079.7041246847,
+       "fuel_rub_h": -13909.267950613536,
+       "h2_rub_h": 1150416.522345601,
+       "recycle_rub_h": 98.719017329179,
+       "catalyst_rub_h": 2473.7307123679984,
+       "throughput_t_h": 270.44080025809154,
+       "gross_revenue_rub_h": 14874244.014195034,
+       "margin_rub_h": 13735164.310070349,
+       "catalyst_days_left": 707.4335097391415
+      },
+      "reliability": {
+       "t": "2024-04-26T20:00:00",
+       "severity_index": 0.245,
+       "severity": "ok",
+       "factors": {
+        "wabt": 0.0,
+        "dp_reactor": 0.567,
+        "quench": 0.295,
+        "h2_to_oil": 0.295
+       },
+       "bounds": {
+        "d_temp_c": [
+         -4.985,
+         21.45
+        ]
+       },
+       "catalyst_days_left": 707.0,
+       "notes": []
+      }
+     }
+    },
+    "alternatives": [
+     {
+      "option_id": "opt038",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": 3.013,
+       "d_press_mpa": -0.2007,
+       "d_h2_pct": 0.0
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка +3.0 %, давление -0.20 МПа",
+      "metrics": {
+       "quality_margin": 0.479,
+       "worst_exceed_prob": 0.485,
+       "throughput_t_h": 278.589,
+       "cost_rub_h": 1161901.748,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 14160488.364,
+       "violated": [
+        "Массовая концентрация серы: риск 49 %"
+       ],
+       "compliant": 0
+      },
+      "score": 1.0,
+      "rank": 106,
+      "pareto": true,
+      "rationale": "",
+      "predictions": {
+       "quality": {
+        "t": "2024-04-26T20:00:00",
+        "grade": "DT_SUMMER",
+        "items": [
+         {
+          "param": "Mg.Sulfur",
+          "ru_name": "Массовая концентрация серы",
+          "value": 6.6,
+          "unit": "мг/кг",
+          "source": "ЛИМС (контрольный факт)",
+          "age_h": 4.0,
+          "forecast": 9.904,
+          "lo": 4.25,
+          "hi": 14.679,
+          "limit": 10.0,
+          "limit_kind": "max",
+          "hard": true,
+          "exceed_prob": 0.485,
+          "margin": 0.096,
+          "risk_process": 0.466,
+          "risk_detail": {
+           "p_total": 0.485,
+           "p_process": 0.466,
+           "sigma_total": 1.492,
+           "sigma_measurement": 0.992,
+           "sigma_process": 1.114,
+           "target_for_10pct": 7.705
+          }
+         },
+         {
+          "param": "D15",
+          "ru_name": "Плотность при 15 °C",
+          "value": 835.3,
+          "unit": "kg/m3",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 835.622,
+          "lo": 832.55,
+          "hi": 838.694,
+          "limit": 845.0,
+          "limit_kind": "range",
+          "hard": true,
+          "exceed_prob": 0.0,
+          "margin": 9.378,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "CetaneNumber",
+          "ru_name": "Цетановое число",
+          "value": 55.8,
+          "unit": "cetane",
+          "source": "ЛИМС (34 ч)",
+          "age_h": 34.0,
+          "forecast": 55.736,
+          "lo": 52.717,
+          "hi": 58.754,
+          "limit": 51.0,
+          "limit_kind": "min",
+          "hard": true,
+          "exceed_prob": 0.005,
+          "margin": 4.736,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "95%.T",
+          "ru_name": "Температура выкипания 95 % об.",
+          "value": 350.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 349.355,
+          "lo": 335.787,
+          "hi": 362.923,
+          "limit": 360.0,
+          "limit_kind": "max",
+          "hard": true,
+          "exceed_prob": 0.098,
+          "margin": 10.645,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "CFPP",
+          "ru_name": "Предельная температура фильтруемости (ПТФ)",
+          "value": -4.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": -4.285,
+          "lo": -7.351,
+          "hi": -1.219,
+          "limit": -5.0,
+          "limit_kind": "max",
+          "hard": false,
+          "exceed_prob": 0.649,
+          "margin": -0.715,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "FlashPoint",
+          "ru_name": "Температура вспышки",
+          "value": 69.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 69.387,
+          "lo": 58.412,
+          "hi": 80.362,
+          "limit": 55.0,
+          "limit_kind": "min",
+          "hard": false,
+          "exceed_prob": 0.016,
+          "margin": 14.387,
+          "risk_process": null,
+          "risk_detail": null
+         }
+        ],
+        "confidence": 0.885,
+        "horizon_min": 120,
+        "worst_param": "Mg.Sulfur",
+        "worst_prob": 0.485,
+        "notes": []
+       },
+       "economics": {
+        "cost_rub_h": 1161901.7476193395,
+        "fuel_rub_h": -25160.350750544596,
+        "h2_rub_h": 1184940.454312463,
+        "recycle_rub_h": 104.75724071897424,
+        "catalyst_rub_h": 2016.8868167020448,
+        "throughput_t_h": 278.5889111290676,
+        "gross_revenue_rub_h": 15322390.112098716,
+        "margin_rub_h": 14160488.364479376,
+        "catalyst_days_left": 867.6738751565393
+       },
+       "reliability": {
+        "t": "2024-04-26T20:00:00",
+        "severity_index": 0.245,
+        "severity": "ok",
+        "factors": {
+         "wabt": 0.0,
+         "dp_reactor": 0.567,
+         "quench": 0.295,
+         "h2_to_oil": 0.295
+        },
+        "bounds": {
+         "d_temp_c": [
+          -4.985,
+          21.45
+         ]
+        },
+        "catalyst_days_left": 868.0,
+        "notes": []
+       }
+      }
+     },
+     {
+      "option_id": "opt039",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": 3.013,
+       "d_press_mpa": -0.2007,
+       "d_h2_pct": 2.732
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка +3.0 %, давление -0.20 МПа, расход ВСГ +2.7 %",
+      "metrics": {
+       "quality_margin": 0.555,
+       "worst_exceed_prob": 0.433,
+       "throughput_t_h": 278.589,
+       "cost_rub_h": 1161912.809,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 14160477.303,
+       "violated": [
+        "Массовая концентрация серы: риск 43 %"
+       ],
+       "compliant": 0
+      },
+      "score": 1.056,
+      "rank": 91,
+      "pareto": true,
+      "rationale": "",
+      "predictions": {
+       "quality": {
+        "t": "2024-04-26T20:00:00",
+        "grade": "DT_SUMMER",
+        "items": [
+         {
+          "param": "Mg.Sulfur",
+          "ru_name": "Массовая концентрация серы",
+          "value": 6.6,
+          "unit": "мг/кг",
+          "source": "ЛИМС (контрольный факт)",
+          "age_h": 4.0,
+          "forecast": 9.755,
+          "lo": 4.33,
+          "hi": 14.336,
+          "limit": 10.0,
+          "limit_kind": "max",
+          "hard": true,
+          "exceed_prob": 0.433,
+          "margin": 0.245,
+          "risk_process": 0.413,
+          "risk_detail": {
+           "p_total": 0.433,
+           "p_process": 0.413,
+           "sigma_total": 1.492,
+           "sigma_measurement": 0.992,
+           "sigma_process": 1.114,
+           "target_for_10pct": 7.705
+          }
+         },
+         {
+          "param": "D15",
+          "ru_name": "Плотность при 15 °C",
+          "value": 835.3,
+          "unit": "kg/m3",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 835.622,
+          "lo": 832.55,
+          "hi": 838.694,
+          "limit": 845.0,
+          "limit_kind": "range",
+          "hard": true,
+          "exceed_prob": 0.0,
+          "margin": 9.378,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "CetaneNumber",
+          "ru_name": "Цетановое число",
+          "value": 55.8,
+          "unit": "cetane",
+          "source": "ЛИМС (34 ч)",
+          "age_h": 34.0,
+          "forecast": 55.736,
+          "lo": 52.717,
+          "hi": 58.754,
+          "limit": 51.0,
+          "limit_kind": "min",
+          "hard": true,
+          "exceed_prob": 0.005,
+          "margin": 4.736,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "95%.T",
+          "ru_name": "Температура выкипания 95 % об.",
+          "value": 350.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 349.355,
+          "lo": 335.787,
+          "hi": 362.923,
+          "limit": 360.0,
+          "limit_kind": "max",
+          "hard": true,
+          "exceed_prob": 0.098,
+          "margin": 10.645,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "CFPP",
+          "ru_name": "Предельная температура фильтруемости (ПТФ)",
+          "value": -4.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": -4.285,
+          "lo": -7.351,
+          "hi": -1.219,
+          "limit": -5.0,
+          "limit_kind": "max",
+          "hard": false,
+          "exceed_prob": 0.649,
+          "margin": -0.715,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "FlashPoint",
+          "ru_name": "Температура вспышки",
+          "value": 69.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 69.387,
+          "lo": 58.412,
+          "hi": 80.362,
+          "limit": 55.0,
+          "limit_kind": "min",
+          "hard": false,
+          "exceed_prob": 0.016,
+          "margin": 14.387,
+          "risk_process": null,
+          "risk_detail": null
+         }
+        ],
+        "confidence": 0.894,
+        "horizon_min": 120,
+        "worst_param": "Mg.Sulfur",
+        "worst_prob": 0.433,
+        "notes": []
+       },
+       "economics": {
+        "cost_rub_h": 1161912.8092718904,
+        "fuel_rub_h": -25160.350750544596,
+        "h2_rub_h": 1184951.515965014,
+        "recycle_rub_h": 104.75724071897424,
+        "catalyst_rub_h": 2016.8868167020448,
+        "throughput_t_h": 278.5889111290676,
+        "gross_revenue_rub_h": 15322390.112098716,
+        "margin_rub_h": 14160477.302826826,
+        "catalyst_days_left": 867.6738751565393
+       },
+       "reliability": {
+        "t": "2024-04-26T20:00:00",
+        "severity_index": 0.245,
+        "severity": "ok",
+        "factors": {
+         "wabt": 0.0,
+         "dp_reactor": 0.567,
+         "quench": 0.295,
+         "h2_to_oil": 0.295
+        },
+        "bounds": {
+         "d_temp_c": [
+          -4.985,
+          21.45
+         ]
+        },
+        "catalyst_days_left": 868.0,
+        "notes": []
+       }
+      }
+     },
+     {
+      "option_id": "opt040",
+      "action": {
+       "d_temp_c": -2.651,
+       "d_load_pct": 3.013,
+       "d_press_mpa": 0.0,
+       "d_h2_pct": -2.732
+      },
+      "action_label": "температура реактора -2.7 °C, загрузка +3.0 %, расход ВСГ -2.7 %",
+      "metrics": {
+       "quality_margin": 0.555,
+       "worst_exceed_prob": 0.437,
+       "throughput_t_h": 278.589,
+       "cost_rub_h": 1161911.951,
+       "severity_index": 0.245,
+       "feasible": 1,
+       "margin_rub_h": 14160478.161,
+       "violated": [
+        "Массовая концентрация серы: риск 44 %"
+       ],
+       "compliant": 0
+      },
+      "score": 1.052,
+      "rank": 93,
+      "pareto": true,
+      "rationale": "",
+      "predictions": {
+       "quality": {
+        "t": "2024-04-26T20:00:00",
+        "grade": "DT_SUMMER",
+        "items": [
+         {
+          "param": "Mg.Sulfur",
+          "ru_name": "Массовая концентрация серы",
+          "value": 6.6,
+          "unit": "мг/кг",
+          "source": "ЛИМС (контрольный факт)",
+          "age_h": 4.0,
+          "forecast": 9.767,
+          "lo": 4.325,
+          "hi": 14.362,
+          "limit": 10.0,
+          "limit_kind": "max",
+          "hard": true,
+          "exceed_prob": 0.437,
+          "margin": 0.233,
+          "risk_process": 0.417,
+          "risk_detail": {
+           "p_total": 0.437,
+           "p_process": 0.417,
+           "sigma_total": 1.492,
+           "sigma_measurement": 0.992,
+           "sigma_process": 1.114,
+           "target_for_10pct": 7.705
+          }
+         },
+         {
+          "param": "D15",
+          "ru_name": "Плотность при 15 °C",
+          "value": 835.3,
+          "unit": "kg/m3",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 835.622,
+          "lo": 832.55,
+          "hi": 838.694,
+          "limit": 845.0,
+          "limit_kind": "range",
+          "hard": true,
+          "exceed_prob": 0.0,
+          "margin": 9.378,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "CetaneNumber",
+          "ru_name": "Цетановое число",
+          "value": 55.8,
+          "unit": "cetane",
+          "source": "ЛИМС (34 ч)",
+          "age_h": 34.0,
+          "forecast": 55.736,
+          "lo": 52.717,
+          "hi": 58.754,
+          "limit": 51.0,
+          "limit_kind": "min",
+          "hard": true,
+          "exceed_prob": 0.005,
+          "margin": 4.736,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "95%.T",
+          "ru_name": "Температура выкипания 95 % об.",
+          "value": 350.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 349.355,
+          "lo": 335.787,
+          "hi": 362.923,
+          "limit": 360.0,
+          "limit_kind": "max",
+          "hard": true,
+          "exceed_prob": 0.098,
+          "margin": 10.645,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "CFPP",
+          "ru_name": "Предельная температура фильтруемости (ПТФ)",
+          "value": -4.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": -4.285,
+          "lo": -7.351,
+          "hi": -1.219,
+          "limit": -5.0,
+          "limit_kind": "max",
+          "hard": false,
+          "exceed_prob": 0.649,
+          "margin": -0.715,
+          "risk_process": null,
+          "risk_detail": null
+         },
+         {
+          "param": "FlashPoint",
+          "ru_name": "Температура вспышки",
+          "value": 69.0,
+          "unit": "degC",
+          "source": "ЛИМС (10 ч)",
+          "age_h": 10.0,
+          "forecast": 69.387,
+          "lo": 58.412,
+          "hi": 80.362,
+          "limit": 55.0,
+          "limit_kind": "min",
+          "hard": false,
+          "exceed_prob": 0.016,
+          "margin": 14.387,
+          "risk_process": null,
+          "risk_detail": null
+         }
+        ],
+        "confidence": 0.894,
+        "horizon_min": 120,
+        "worst_param": "Mg.Sulfur",
+        "worst_prob": 0.437,
+        "notes": []
+       },
+       "economics": {
+        "cost_rub_h": 1161911.9507715888,
+        "fuel_rub_h": -25160.350750544596,
+        "h2_rub_h": 1184950.6574647124,
+        "recycle_rub_h": 104.75724071897424,
+        "catalyst_rub_h": 2016.8868167020448,
+        "throughput_t_h": 278.5889111290676,
+        "gross_revenue_rub_h": 15322390.112098716,
+        "margin_rub_h": 14160478.161327127,
+        "catalyst_days_left": 867.6738751565393
+       },
+       "reliability": {
+        "t": "2024-04-26T20:00:00",
+        "severity_index": 0.245,
+        "severity": "ok",
+        "factors": {
+         "wabt": 0.0,
+         "dp_reactor": 0.567,
+         "quench": 0.295,
+         "h2_to_oil": 0.295
+        },
+        "bounds": {
+         "d_temp_c": [
+          -4.985,
+          21.45
+         ]
+        },
+        "catalyst_days_left": 868.0,
+        "notes": []
+       }
+      }
+     }
+    ],
+    "baseline": {
+     "t": "2024-04-26T20:00:00",
+     "grade": "DT_SUMMER",
+     "items": [
+      {
+       "param": "Mg.Sulfur",
+       "ru_name": "Массовая концентрация серы",
+       "value": 6.6,
+       "unit": "мг/кг",
+       "source": "ЛИМС (контрольный факт)",
+       "age_h": 4.0,
+       "forecast": 8.507,
+       "lo": 4.838,
+       "hi": 11.605,
+       "limit": 10.0,
+       "limit_kind": "max",
+       "hard": true,
+       "exceed_prob": 0.157,
+       "margin": 1.493,
+       "risk_process": 0.09,
+       "risk_detail": {
+        "p_total": 0.157,
+        "p_process": 0.09,
+        "sigma_total": 1.492,
+        "sigma_measurement": 0.992,
+        "sigma_process": 1.114,
+        "target_for_10pct": 7.705
+       }
+      },
+      {
+       "param": "D15",
+       "ru_name": "Плотность при 15 °C",
+       "value": 835.3,
+       "unit": "kg/m3",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": 835.3,
+       "lo": 832.228,
+       "hi": 838.372,
+       "limit": 845.0,
+       "limit_kind": "range",
+       "hard": true,
+       "exceed_prob": 0.0,
+       "margin": 9.7,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "CetaneNumber",
+       "ru_name": "Цетановое число",
+       "value": 55.8,
+       "unit": "cetane",
+       "source": "ЛИМС (34 ч)",
+       "age_h": 34.0,
+       "forecast": 55.8,
+       "lo": 52.782,
+       "hi": 58.818,
+       "limit": 51.0,
+       "limit_kind": "min",
+       "hard": true,
+       "exceed_prob": 0.004,
+       "margin": 4.8,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "95%.T",
+       "ru_name": "Температура выкипания 95 % об.",
+       "value": 350.0,
+       "unit": "degC",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": 350.0,
+       "lo": 336.432,
+       "hi": 363.568,
+       "limit": 360.0,
+       "limit_kind": "max",
+       "hard": true,
+       "exceed_prob": 0.113,
+       "margin": 10.0,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "CFPP",
+       "ru_name": "Предельная температура фильтруемости (ПТФ)",
+       "value": -4.0,
+       "unit": "degC",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": -4.0,
+       "lo": -7.066,
+       "hi": -0.934,
+       "limit": -5.0,
+       "limit_kind": "max",
+       "hard": false,
+       "exceed_prob": 0.704,
+       "margin": -1.0,
+       "risk_process": null,
+       "risk_detail": null
+      },
+      {
+       "param": "FlashPoint",
+       "ru_name": "Температура вспышки",
+       "value": 69.0,
+       "unit": "degC",
+       "source": "ЛИМС (10 ч)",
+       "age_h": 10.0,
+       "forecast": 69.0,
+       "lo": 58.025,
+       "hi": 79.975,
+       "limit": 55.0,
+       "limit_kind": "min",
+       "hard": false,
+       "exceed_prob": 0.018,
+       "margin": 14.0,
+       "risk_process": null,
+       "risk_detail": null
+      }
+     ],
+     "confidence": 0.986,
+     "horizon_min": 120,
+     "worst_param": "Mg.Sulfur",
+     "worst_prob": 0.157,
+     "notes": []
+    }
+   }
+  },
+  {
+   "seq": 17,
+   "sender": "explainer",
+   "recipient": "orchestrator",
+   "topic": "explain.response",
+   "elapsed_ms": 0.2,
+   "payload": {
+    "markdown": "### Время и состояние\nСрез **2024-04-26 20:00**. Пригодность данных **1.00** — данных достаточно.\nСвежесть источников — LIMS_feed_sulfur: 0.0 ч, LIMS_product_sulfur: 4.0 ч, PAK: 0.2 ч, TELEMETRY: 0.0 ч.\nСырьё гидроочистки: сера **1.600 % масс.** (ЛИМС (свежий), возраст 0 ч), Т95 352.0 °C, расход 112.9 т/ч.\n\n### Проблема / риск\nСера продукта сейчас **6.60 мг/кг** (ЛИМС (контрольный факт)); прогноз через 120 мин **без вмешательства** — **8.51** мг/кг, интервал 90 % [4.84; 11.61].\nВероятность выхода за предел 10 мг/кг при бездействии — **16 %**.\nЧтобы риск опустился до 10 %, уровень серы должен быть не выше **7.71 мг/кг** (предел 10 минус 90-й процентиль разброса измерения).\n\n### Предлагаемое действие\n**температура реактора +0.9 °C, давление +0.20 МПа**\n\n### Ожидаемый эффект\n- сера через горизонт: 8.51 → 8.06 мг/кг (интервал 90 % [3.67; 11.76])\n- риск нарушения по сере (лаб.): 16 % → 12 %\n- в том числе технологический риск: 4 % (остальное — расхождение лаборатории и поточного анализатора, σ=0.99 мг/кг)\n- выпуск: 270.4 т/ч\n- переменные затраты: 1 139 080 ₽/ч\n- тяжесть режима: индекс 0.25 (ok)\n- ресурс катализатора: 707 сут\n- эффект против бездействия: риск снижается на 4 п.п.; переменные затраты выше на 2 784 ₽/ч; выпуск +0.0 т/ч\n\n### Проверка ограничений\n| Показатель | Прогноз | Предел | Запас | Риск | Вердикт |\n|---|---|---|---|---|---|\n| Массовая концентрация серы (жёсткое) | 8.06 | ≤ 10.0 | 1.94 | 12 % | риск выше допустимого |\n| Плотность при 15 °C (жёсткое) | 835.19 | диапазон, верх 845.0 | 9.81 | 0 % | выполнено |\n| Цетановое число (жёсткое) | 55.82 | ≥ 51.0 | 4.82 | 0 % | выполнено |\n| Температура выкипания 95 % об. (жёсткое) | 350.21 | ≤ 360.0 | 9.79 | 12 % | риск выше допустимого |\n| Предельная температура фильтруемости (ПТФ) (рекоменд.) | -3.91 | ≤ -5.0 | -1.09 | 72 % | НЕ ВЫПОЛНЕНО |\n| Температура вспышки (рекоменд.) | 68.87 | ≥ 55.0 | 13.87 | 2 % | выполнено |\n\n### Уверенность\nИтоговая уверенность **0.94** (качество данных 1.00 x модельная уверенность 0.94).\n\n### Почему выбран этот вариант\n- ни один вариант не обеспечивает риск нарушения ниже 10 %: выбран режим МИНИМАЛЬНОГО РИСКА, остаточный риск по показателю «Массовая концентрация серы» 12 %. Основная причина — разброс между лабораторией и поточным анализатором, а не режим установки\n- из 314 допустимых вариантов 21 находятся на фронте Парето; выбран лучший по свёртке с приоритетом качества\n- относительно бездействия риск нарушения снижается на 4 п.п. ценой 2 784 ₽/ч переменных затрат\n- ресурс цикла катализатора при выбранном режиме — 707 сут\n\nДопустимые альтернативы:\n- температура реактора -2.7 °C  загрузка +3.0 %  давление -0.20 МПа — риск по сере 49 %  затраты 1 161 902 ₽/ч  выпуск 278.6 т/ч  тяжесть 0.25\n- температура реактора -2.7 °C  загрузка +3.0 %  давление -0.20 МПа  расход ВСГ +2.7 % — риск по сере 43 %  затраты 1 161 913 ₽/ч  выпуск 278.6 т/ч  тяжесть 0.25\n- температура реактора -2.7 °C  загрузка +3.0 %  расход ВСГ -2.7 % — риск по сере 44 %  затраты 1 161 912 ₽/ч  выпуск 278.6 т/ч  тяжесть 0.25"
+   }
+  }
+ ],
+ "scenario": {
+  "id": "feed_sulfur_up_tight",
+  "title": "То же утяжеление сырья, но запаса по качеству мало — требуется вмешательство",
+  "why": "Тот же сценарий эксперта на режиме, где сера в продукте уже близка к нормативу. Здесь запаса нет, и система обязана предложить повышение температуры реактора. Сравните с feed_sulfur_up: одно и то же изменение сырья приводит к РАЗНЫМ решениям в зависимости от состояния процесса — это и есть «мягкий» сценарий, которого требовал эксперт. Развёрнутая зависимость решения от серы сырья: dfmas sweep.",
+  "at": "2024-04-26 20:00:00",
+  "grade": "DT_SUMMER",
+  "overrides": {},
+  "lab_overrides": {
+   "HT_FEED:Mass.Sulfur": 1.6
+  },
+  "tanks": null
+ }
+}

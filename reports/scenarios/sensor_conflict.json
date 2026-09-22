@@ -1,0 +1,681 @@
+{
+ "recommendation": {
+  "t": "2024-09-15T20:00:00",
+  "decision": "refuse",
+  "headline": "Надёжной рекомендации нет: входные данные непригодны",
+  "action_label": "вмешательство не предлагается",
+  "option": null,
+  "alternatives": [],
+  "constraint_table": [],
+  "confidence": 0.7,
+  "reasons": [
+   "два независимых анализатора серы расходятся на 3.8 мг/кг (допуск 3.0): Q21=3.0, ПАК=6.8"
+  ],
+  "expected_effect": {
+   "действие": "режим не менять, устранить проблему с данными",
+   "пояснение": "Надёжной рекомендации нет: входные данные непригодны"
+  },
+  "blend": null,
+  "setpoint_plan": null,
+  "state_hash": "fbb9bd9e390395c7"
+ },
+ "state": {
+  "t": "2024-09-15T20:00:00",
+  "n_tags": 97,
+  "n_missing": 2,
+  "lab": {
+   "AVT_DIESEL_P1:50%.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "50%.T",
+    "value": 316.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-13T14:00:00",
+    "available_at": "2024-09-13T18:00:00",
+    "age_hours": 54.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:90%.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "90%.T",
+    "value": 340.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-13T14:00:00",
+    "available_at": "2024-09-13T18:00:00",
+    "age_hours": 54.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:95%.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "95%.T",
+    "value": 350.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-13T14:00:00",
+    "available_at": "2024-09-13T18:00:00",
+    "age_hours": 54.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:CloudPoint@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "CloudPoint",
+    "value": -2.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-07-01T14:00:00",
+    "available_at": "2024-07-01T18:00:00",
+    "age_hours": 1830.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:D15@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "D15",
+    "value": 871.7000122070312,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-09-06T14:00:00",
+    "available_at": "2024-09-06T18:00:00",
+    "age_hours": 222.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:EBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "EBP.T",
+    "value": 358.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-13T14:00:00",
+    "available_at": "2024-09-13T18:00:00",
+    "age_hours": 54.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:I350@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "I350",
+    "value": 92.0,
+    "unit": "vol%",
+    "source": "LIMS",
+    "measured_at": "2024-08-30T14:00:00",
+    "available_at": "2024-08-30T18:00:00",
+    "age_hours": 390.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:IBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "IBP.T",
+    "value": 230.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-13T14:00:00",
+    "available_at": "2024-09-13T18:00:00",
+    "age_hours": 54.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P1:PourPoint@LIMS": {
+    "stream": "AVT_DIESEL_P1",
+    "param": "PourPoint",
+    "value": -1.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T14:00:00",
+    "available_at": "2024-09-15T18:00:00",
+    "age_hours": 6.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:50%.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "50%.T",
+    "value": 247.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:90%.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "90%.T",
+    "value": 287.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:95%.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "95%.T",
+    "value": 303.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:CloudPoint@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "CloudPoint",
+    "value": -21.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-08-21T14:00:00",
+    "available_at": "2024-08-21T18:00:00",
+    "age_hours": 606.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:D15@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "D15",
+    "value": 831.2999877929688,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:EBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "EBP.T",
+    "value": 315.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P2:IBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P2",
+    "param": "IBP.T",
+    "value": 188.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:50%.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "50%.T",
+    "value": 303.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:90%.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "90%.T",
+    "value": 352.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:95%.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "95%.T",
+    "value": 366.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:CloudPoint@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "CloudPoint",
+    "value": 4.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-08-21T14:00:00",
+    "available_at": "2024-08-21T18:00:00",
+    "age_hours": 606.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:D15@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "D15",
+    "value": 856.6,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:EBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "EBP.T",
+    "value": 370.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P21:IBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P21",
+    "param": "IBP.T",
+    "value": 197.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-07T14:00:00",
+    "available_at": "2024-09-07T18:00:00",
+    "age_hours": 198.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:50%.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "50%.T",
+    "value": 272.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:90%.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "90%.T",
+    "value": 323.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:95%.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "95%.T",
+    "value": 337.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:CloudPoint@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "CloudPoint",
+    "value": -7.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:D15@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "D15",
+    "value": 844.4000244140625,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-09-04T10:00:00",
+    "available_at": "2024-09-04T14:00:00",
+    "age_hours": 274.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:EBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "EBP.T",
+    "value": 349.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:FilterabilityLimit.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "FilterabilityLimit.T",
+    "value": -9.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-04T10:00:00",
+    "available_at": "2024-09-04T14:00:00",
+    "age_hours": 274.0,
+    "overridden": false
+   },
+   "AVT_DIESEL_P3:IBP.T@LIMS": {
+    "stream": "AVT_DIESEL_P3",
+    "param": "IBP.T",
+    "value": 188.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:50%.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "50%.T",
+    "value": 272.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:90%.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "90%.T",
+    "value": 328.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:95%.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "95%.T",
+    "value": 342.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:CloudPoint@LIMS": {
+    "stream": "HT_FEED",
+    "param": "CloudPoint",
+    "value": -7.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:D15@LIMS": {
+    "stream": "HT_FEED",
+    "param": "D15",
+    "value": 841.5,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:EBP.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "EBP.T",
+    "value": 353.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:IBP.T@LIMS": {
+    "stream": "HT_FEED",
+    "param": "IBP.T",
+    "value": 190.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_FEED:Mass.Sulfur@LIMS": {
+    "stream": "HT_FEED",
+    "param": "Mass.Sulfur",
+    "value": 0.7429999709129333,
+    "unit": "wt%",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:50%.T@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "50%.T",
+    "value": 268.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:90%.T@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "90%.T",
+    "value": 320.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:95%.T@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "95%.T",
+    "value": 334.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:CFPP@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "CFPP",
+    "value": -11.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-13T22:00:00",
+    "available_at": "2024-09-14T02:00:00",
+    "age_hours": 46.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:CetaneNumber@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "CetaneNumber",
+    "value": 54.70000076293945,
+    "unit": "cetane",
+    "source": "LIMS",
+    "measured_at": "2024-08-08T10:00:00",
+    "available_at": "2024-08-08T14:00:00",
+    "age_hours": 922.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:CloudPoint@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "CloudPoint",
+    "value": -7.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:D15@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "D15",
+    "value": 832.5999755859375,
+    "unit": "kg/m3",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:FlashPoint@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "FlashPoint",
+    "value": 72.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:I250@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "I250",
+    "value": 28.0,
+    "unit": "vol%",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:I350@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "I350",
+    "value": 0.0,
+    "unit": "vol%",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:IBP.T@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "IBP.T",
+    "value": 185.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:Mg.Sulfur@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "Mg.Sulfur",
+    "value": 5.300000190734863,
+    "unit": "mg/kg",
+    "source": "LIMS",
+    "measured_at": "2024-09-15T10:00:00",
+    "available_at": "2024-09-15T14:00:00",
+    "age_hours": 10.0,
+    "overridden": false
+   },
+   "HT_PRODUCT:Mg.Sulfur@PAK": {
+    "stream": "HT_PRODUCT",
+    "param": "Mg.Sulfur",
+    "value": 6.82470178604126,
+    "unit": "mg/kg",
+    "source": "PAK",
+    "measured_at": "2024-09-15T19:50:00",
+    "available_at": "2024-09-15T20:00:00",
+    "age_hours": 0.17,
+    "overridden": false
+   },
+   "HT_PRODUCT:PourPoint@LIMS": {
+    "stream": "HT_PRODUCT",
+    "param": "PourPoint",
+    "value": -11.0,
+    "unit": "degC",
+    "source": "LIMS",
+    "measured_at": "2024-09-04T10:00:00",
+    "available_at": "2024-09-04T14:00:00",
+    "age_hours": 274.0,
+    "overridden": false
+   }
+  }
+ },
+ "trace": [
+  {
+   "seq": 1,
+   "sender": "orchestrator",
+   "recipient": "data",
+   "topic": "assess.request",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "state": "<ProcessState>"
+   }
+  },
+  {
+   "seq": 2,
+   "sender": "data",
+   "recipient": "orchestrator",
+   "topic": "assess.response",
+   "elapsed_ms": 2.6,
+   "payload": {
+    "t": "2024-09-15T20:00:00",
+    "usable": false,
+    "score": 0.7,
+    "issues": [
+     {
+      "code": "SOURCE_MISMATCH",
+      "detail": "два независимых анализатора серы расходятся на 3.8 мг/кг (допуск 3.0): Q21=3.0, ПАК=6.8",
+      "severity": "alarm",
+      "tags": [
+       "H_Q21"
+      ]
+     }
+    ],
+    "freshness_h": {
+     "TELEMETRY": 0.0,
+     "PAK": 0.17,
+     "LIMS_feed_sulfur": 10.0,
+     "LIMS_product_sulfur": 10.0
+    },
+    "cross_check": {
+     "q21": 3.0,
+     "pak": 6.825,
+     "abs_diff": 3.825,
+     "regime_mahalanobis": 0.921
+    }
+   }
+  },
+  {
+   "seq": 3,
+   "sender": "orchestrator",
+   "recipient": "*",
+   "topic": "decision.refuse",
+   "elapsed_ms": 0.0,
+   "payload": {
+    "reason": "данные непригодны",
+    "score": 0.7
+   }
+  }
+ ],
+ "scenario": {
+  "id": "sensor_conflict",
+  "title": "Расхождение независимых анализаторов серы — неисправность прибора",
+  "why": "Поточный анализатор Q21 показывает 3 мг/кг, выгрузка ПАК — около 9. Ни одно значение нельзя считать верным. Агент данных обязан это заметить (проверка согласованности источников) и заблокировать цикл.",
+  "at": "2024-09-15 20:00:00",
+  "grade": "DT_SUMMER",
+  "overrides": {
+   "H_Q21": 3.0
+  },
+  "lab_overrides": {},
+  "tanks": null
+ }
+}
